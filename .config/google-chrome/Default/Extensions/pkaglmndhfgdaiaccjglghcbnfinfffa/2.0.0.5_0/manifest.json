@@ -1,0 +1,39 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": false
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "icons/icon1.png",
+         "38": "icons/icon1@2x.png"
+      },
+      "default_title": "__MSG_browserbutton__"
+   },
+   "content_scripts": [ {
+      "css": [ "css/aa.css" ],
+      "js": [ "js/content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com https://platform.twitter.com https://apis.google.com; img-src *; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "homepage_url": "http://www.stefanvd.net",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDgrBJDFucDzjFYddeM8RNZWuStwk3wpDwkp6NBoGVFBsL9w/TUfY2hIqseH6KFWuj1xqyPEzA8bTJx8UsuuAY+FqlJUeJzME/9B10zfpLZTBDl8L+QmiV8RghUFTpj1q3h5za5XLTUJK79CMZyOY9zEgyxPuOgOCQxOu8jCrMu4QIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "20",
+   "name": "__MSG_name__",
+   "options_page": "options.html",
+   "permissions": [ "contextMenus", "tabs", "http://*/*", "https://*/*", "storage", "notifications" ],
+   "short_name": "AA",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.0.5",
+   "web_accessible_resources": [ "images/arrow.png", "images/googleplus.png", "images/twitter.png", "images/facebook.png", "images/googleplus@2x.png", "images/twitter@2x.png", "images/facebook@2x.png" ]
+}

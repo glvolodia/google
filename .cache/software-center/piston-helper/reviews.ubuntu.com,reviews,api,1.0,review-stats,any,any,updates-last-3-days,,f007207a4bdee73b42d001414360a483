@@ -1,0 +1,269 @@
+status: 200
+content-length: 6699
+expires: Wed, 24 Feb 2016 02:04:33 GMT
+content-location: https://reviews.ubuntu.com/reviews/api/1.0/review-stats/any/any/updates-last-3-days/
+strict-transport-security: max-age=15768000; includeSubDomains; preload
+vary: Accept,Accept-Encoding
+server: gunicorn/19.3.0
+last-modified: Tue, 23 Feb 2016 22:04:33 GMT
+-content-encoding: gzip
+x-bzr-revision-number: 313
+cache-control: max-age=14400
+date: Tue, 23 Feb 2016 22:06:24 GMT
+content-type: application/json; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+[
+    {
+        "ratings_total": 20, 
+        "ratings_average": "3.90", 
+        "app_name": "", 
+        "package_name": "gnome-chess", 
+        "histogram": "[3, 1, 1, 5, 10]"
+    }, 
+    {
+        "ratings_total": 195, 
+        "ratings_average": "4.68", 
+        "app_name": "", 
+        "package_name": "gnome-terminal", 
+        "histogram": "[4, 3, 10, 18, 160]"
+    }, 
+    {
+        "ratings_total": 12, 
+        "ratings_average": "3.58", 
+        "app_name": "", 
+        "package_name": "eiskaltdcpp-gtk", 
+        "histogram": "[0, 3, 3, 2, 4]"
+    }, 
+    {
+        "ratings_total": 124, 
+        "ratings_average": "4.60", 
+        "app_name": "", 
+        "package_name": "indicator-multiload", 
+        "histogram": "[6, 0, 4, 18, 96]"
+    }, 
+    {
+        "ratings_total": 13, 
+        "ratings_average": "2.85", 
+        "app_name": "", 
+        "package_name": "rott", 
+        "histogram": "[3, 3, 2, 3, 2]"
+    }, 
+    {
+        "ratings_total": 159, 
+        "ratings_average": "4.58", 
+        "app_name": "", 
+        "package_name": "openarena", 
+        "histogram": "[3, 2, 9, 30, 115]"
+    }, 
+    {
+        "ratings_total": 2, 
+        "ratings_average": "5.00", 
+        "app_name": "", 
+        "package_name": "incron", 
+        "histogram": "[0, 0, 0, 0, 2]"
+    }, 
+    {
+        "ratings_total": 205, 
+        "ratings_average": "4.12", 
+        "app_name": "", 
+        "package_name": "wallch", 
+        "histogram": "[9, 14, 28, 47, 107]"
+    }, 
+    {
+        "ratings_total": 25, 
+        "ratings_average": "3.76", 
+        "app_name": "", 
+        "package_name": "codelite", 
+        "histogram": "[3, 2, 1, 11, 8]"
+    }, 
+    {
+        "ratings_total": 78, 
+        "ratings_average": "4.17", 
+        "app_name": "", 
+        "package_name": "homebank", 
+        "histogram": "[4, 3, 4, 32, 35]"
+    }, 
+    {
+        "ratings_total": 59, 
+        "ratings_average": "3.93", 
+        "app_name": "", 
+        "package_name": "ogmrip", 
+        "histogram": "[9, 3, 5, 8, 34]"
+    }, 
+    {
+        "ratings_total": 322, 
+        "ratings_average": "4.37", 
+        "app_name": "", 
+        "package_name": "soundconverter", 
+        "histogram": "[25, 11, 14, 42, 230]"
+    }, 
+    {
+        "ratings_total": 126, 
+        "ratings_average": "4.63", 
+        "app_name": "", 
+        "package_name": "okular", 
+        "histogram": "[2, 2, 7, 19, 96]"
+    }, 
+    {
+        "ratings_total": 113, 
+        "ratings_average": "4.50", 
+        "app_name": "", 
+        "package_name": "hplip-gui", 
+        "histogram": "[6, 1, 3, 23, 80]"
+    }, 
+    {
+        "ratings_total": 21, 
+        "ratings_average": "3.71", 
+        "app_name": "", 
+        "package_name": "widelands", 
+        "histogram": "[3, 1, 1, 10, 6]"
+    }, 
+    {
+        "ratings_total": 40, 
+        "ratings_average": "3.68", 
+        "app_name": "", 
+        "package_name": "pdfchain", 
+        "histogram": "[6, 3, 3, 14, 14]"
+    }, 
+    {
+        "ratings_total": 109, 
+        "ratings_average": "3.28", 
+        "app_name": "", 
+        "package_name": "allvideodownloader", 
+        "histogram": "[39, 4, 4, 11, 51]"
+    }, 
+    {
+        "ratings_total": 40, 
+        "ratings_average": "4.30", 
+        "app_name": "", 
+        "package_name": "indicator-cpufreq", 
+        "histogram": "[2, 1, 4, 9, 24]"
+    }, 
+    {
+        "ratings_total": 15, 
+        "ratings_average": "2.47", 
+        "app_name": "", 
+        "package_name": "grive", 
+        "histogram": "[8, 1, 1, 1, 4]"
+    }, 
+    {
+        "ratings_total": 22, 
+        "ratings_average": "3.86", 
+        "app_name": "", 
+        "package_name": "bino", 
+        "histogram": "[4, 1, 2, 2, 13]"
+    }, 
+    {
+        "ratings_total": 106, 
+        "ratings_average": "3.16", 
+        "app_name": "", 
+        "package_name": "cryptkeeper", 
+        "histogram": "[39, 4, 6, 15, 42]"
+    }, 
+    {
+        "ratings_total": 16, 
+        "ratings_average": "3.88", 
+        "app_name": "", 
+        "package_name": "amor", 
+        "histogram": "[1, 2, 2, 4, 7]"
+    }, 
+    {
+        "ratings_total": 219, 
+        "ratings_average": "3.60", 
+        "app_name": "", 
+        "package_name": "deja-dup", 
+        "histogram": "[46, 21, 14, 32, 106]"
+    }, 
+    {
+        "ratings_total": 296, 
+        "ratings_average": "4.65", 
+        "app_name": "", 
+        "package_name": "blender", 
+        "histogram": "[10, 5, 11, 28, 242]"
+    }, 
+    {
+        "ratings_total": 37, 
+        "ratings_average": "4.95", 
+        "app_name": "", 
+        "package_name": "vim", 
+        "histogram": "[0, 0, 0, 2, 35]"
+    }, 
+    {
+        "ratings_total": 13, 
+        "ratings_average": "4.62", 
+        "app_name": "", 
+        "package_name": "ninja-ide", 
+        "histogram": "[0, 1, 0, 2, 10]"
+    }, 
+    {
+        "ratings_total": 76, 
+        "ratings_average": "2.59", 
+        "app_name": "", 
+        "package_name": "webbrowser-app", 
+        "histogram": "[28, 11, 13, 12, 12]"
+    }, 
+    {
+        "ratings_total": 380, 
+        "ratings_average": "4.78", 
+        "app_name": "", 
+        "package_name": "inkscape", 
+        "histogram": "[3, 2, 11, 43, 321]"
+    }, 
+    {
+        "ratings_total": 16, 
+        "ratings_average": "3.31", 
+        "app_name": "", 
+        "package_name": "eric", 
+        "histogram": "[3, 3, 2, 2, 6]"
+    }, 
+    {
+        "ratings_total": 260, 
+        "ratings_average": "4.54", 
+        "app_name": "", 
+        "package_name": "teeworlds", 
+        "histogram": "[14, 3, 8, 38, 197]"
+    }, 
+    {
+        "ratings_total": 552, 
+        "ratings_average": "4.65", 
+        "app_name": "", 
+        "package_name": "audacity", 
+        "histogram": "[17, 8, 19, 63, 445]"
+    }, 
+    {
+        "ratings_total": 890, 
+        "ratings_average": "4.68", 
+        "app_name": "", 
+        "package_name": "clementine", 
+        "histogram": "[19, 12, 36, 99, 724]"
+    }, 
+    {
+        "ratings_total": 1448, 
+        "ratings_average": "4.34", 
+        "app_name": "", 
+        "package_name": "chromium-browser", 
+        "histogram": "[92, 62, 83, 236, 975]"
+    }, 
+    {
+        "ratings_total": 131, 
+        "ratings_average": "4.79", 
+        "app_name": "", 
+        "package_name": "classicmenu-indicator", 
+        "histogram": "[3, 0, 2, 12, 114]"
+    }, 
+    {
+        "ratings_total": 21, 
+        "ratings_average": "3.43", 
+        "app_name": "", 
+        "package_name": "ettercap-graphical", 
+        "histogram": "[8, 0, 0, 1, 12]"
+    }, 
+    {
+        "ratings_total": 451, 
+        "ratings_average": "4.54", 
+        "app_name": "", 
+        "package_name": "supertuxkart", 
+        "histogram": "[10, 15, 19, 86, 321]"
+    }
+]

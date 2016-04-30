@@ -1,0 +1,14 @@
+status: 200
+content-length: 2
+expires: Sun, 21 Feb 2016 15:54:37 GMT
+content-location: https://reviews.ubuntu.com/reviews/api/1.0/reviews/filter/uk/any/any/any/skype/page/2/helpful/
+strict-transport-security: max-age=15768000; includeSubDomains; preload
+vary: Accept
+server: gunicorn/19.3.0
+last-modified: Sun, 21 Feb 2016 15:49:37 GMT
+x-bzr-revision-number: 313
+cache-control: max-age=300
+date: Sun, 21 Feb 2016 15:49:37 GMT
+content-type: application/json; charset=utf-8
+
+[]

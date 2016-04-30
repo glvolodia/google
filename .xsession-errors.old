@@ -1,0 +1,15 @@
+Скрипт для ibus запущено з run_im.
+Скрипт для auto запущено з run_im.
+Скрипт для default запущено з run_im.
+init: Процес unity-settings-daemon main завершився і перезапускається
+init: Процес unity-panel-service main (1846) завершився зі статусом 1
+init: Процес indicator-bluetooth main (1955) вбито сигналом TERM
+init: Процес indicator-power main (1959) вбито сигналом TERM
+init: Процес indicator-datetime main (1962) вбито сигналом TERM
+init: Процес indicator-printers main (1965) вбито сигналом TERM
+init: Процес indicator-session main (1970) вбито сигналом TERM
+init: Процес unity-settings-daemon main (10835) завершився зі статусом 1
+init: Процес indicator-application main (1985) вбито сигналом TERM
+init: Disconnected from notified D-Bus bus
+init: Процес hud main (1836) вбито сигналом TERM
+init: Процес gnome-session (Unity) main (1842) завершився зі статусом 1

@@ -1,0 +1,375 @@
+status: 200
+content-length: 8819
+via: 1.1 sumac.canonical.com:3128 (squid/2.7.STABLE7)
+content-location: https://rec.ubuntu.com/api/1.0/recommend_app/skype/
+x-cache: HIT from sumac.canonical.com
+age: 192
+expires: Sun, 21 Feb 2016 15:23:04 GMT
+server: Apache
+last-modified: Sun, 21 Feb 2016 15:18:04 GMT
+etag: "40b04b80fa2ca0c9c00b3734d27aeb73"
+strict-transport-security: max-age=2592000
+cache-control: max-age=300
+date: Sun, 21 Feb 2016 15:23:07 GMT
+content-type: application/json; charset=utf-8
+x-cache-lookup: HIT from sumac.canonical.com:3128
+
+{
+    "rid": "37c0e8ed560148ea6921cb7d4ca29704", 
+    "data": [
+        {
+            "package_name": "gimp", 
+            "similarity": 0.2701
+        }, 
+        {
+            "package_name": "winetricks", 
+            "similarity": 0.2632
+        }, 
+        {
+            "package_name": "icedtea-netx-common", 
+            "similarity": 0.2541
+        }, 
+        {
+            "package_name": "vlc", 
+            "similarity": 0.2539
+        }, 
+        {
+            "package_name": "openjdk-6-jre", 
+            "similarity": 0.2481
+        }, 
+        {
+            "package_name": "p7zip-full", 
+            "similarity": 0.2478
+        }, 
+        {
+            "package_name": "mono-runtime", 
+            "similarity": 0.2428
+        }, 
+        {
+            "package_name": "kdelibs5-data", 
+            "similarity": 0.2395
+        }, 
+        {
+            "lift": 1.21017201260111, 
+            "package_name": "gstreamer0.10-plugins-bad", 
+            "similarity": 0.2392
+        }, 
+        {
+            "package_name": "synaptic", 
+            "similarity": 0.2387
+        }, 
+        {
+            "package_name": "kde-runtime", 
+            "similarity": 0.2375
+        }, 
+        {
+            "package_name": "gstreamer0.10-plugins-bad-multiverse", 
+            "similarity": 0.2374
+        }, 
+        {
+            "package_name": "alacarte", 
+            "similarity": 0.2373
+        }, 
+        {
+            "lift": 1.32088137738667, 
+            "package_name": "gstreamer0.10-ffmpeg", 
+            "similarity": 0.2365
+        }, 
+        {
+            "lift": 1.21045810867737, 
+            "package_name": "gstreamer0.10-plugins-ugly", 
+            "similarity": 0.2361
+        }, 
+        {
+            "package_name": "ubuntu-restricted-extras", 
+            "similarity": 0.2317
+        }, 
+        {
+            "package_name": "wine1.4", 
+            "similarity": 0.2294
+        }, 
+        {
+            "package_name": "metacity", 
+            "similarity": 0.2291
+        }, 
+        {
+            "package_name": "gnome-nettool", 
+            "similarity": 0.2253
+        }, 
+        {
+            "package_name": "unity-2d", 
+            "similarity": 0.2183
+        }, 
+        {
+            "package_name": "compizconfig-settings-manager", 
+            "similarity": 0.2171
+        }, 
+        {
+            "package_name": "chromium-browser", 
+            "similarity": 0.2135
+        }, 
+        {
+            "package_name": "cheese", 
+            "similarity": 0.2096
+        }, 
+        {
+            "package_name": "openjdk-7-jre", 
+            "similarity": 0.2056
+        }, 
+        {
+            "package_name": "flashplugin-installer", 
+            "similarity": 0.2055
+        }, 
+        {
+            "package_name": "gparted", 
+            "similarity": 0.202
+        }, 
+        {
+            "package_name": "usb-creator-gtk", 
+            "similarity": 0.2013
+        }, 
+        {
+            "package_name": "gucharmap", 
+            "similarity": 0.2011
+        }, 
+        {
+            "package_name": "software-center", 
+            "similarity": 0.2011
+        }, 
+        {
+            "package_name": "libreoffice-writer", 
+            "similarity": 0.201
+        }, 
+        {
+            "package_name": "software-properties-gtk", 
+            "similarity": 0.201
+        }, 
+        {
+            "package_name": "xterm", 
+            "similarity": 0.2009
+        }, 
+        {
+            "package_name": "libreoffice-calc", 
+            "similarity": 0.2009
+        }, 
+        {
+            "package_name": "libreoffice-draw", 
+            "similarity": 0.2008
+        }, 
+        {
+            "package_name": "file-roller", 
+            "similarity": 0.2008
+        }, 
+        {
+            "package_name": "libreoffice-impress", 
+            "similarity": 0.2008
+        }, 
+        {
+            "package_name": "libreoffice-math", 
+            "similarity": 0.2006
+        }, 
+        {
+            "lift": 1.94813021182071, 
+            "package_name": "gcalctool", 
+            "similarity": 0.2006
+        }, 
+        {
+            "package_name": "system-config-printer-gnome", 
+            "similarity": 0.2006
+        }, 
+        {
+            "package_name": "network-manager-gnome", 
+            "similarity": 0.2005
+        }, 
+        {
+            "package_name": "gnome-disk-utility", 
+            "similarity": 0.2005
+        }, 
+        {
+            "package_name": "compiz-core", 
+            "similarity": 0.2003
+        }, 
+        {
+            "package_name": "ibus", 
+            "similarity": 0.2003
+        }, 
+        {
+            "lift": 1.55821604456309, 
+            "package_name": "gnome-media", 
+            "similarity": 0.2003
+        }, 
+        {
+            "package_name": "gedit", 
+            "similarity": 0.2002
+        }, 
+        {
+            "package_name": "update-manager", 
+            "similarity": 0.2002
+        }, 
+        {
+            "package_name": "yelp", 
+            "similarity": 0.2002
+        }, 
+        {
+            "package_name": "language-selector-gnome", 
+            "similarity": 0.2002
+        }, 
+        {
+            "package_name": "gnome-terminal", 
+            "similarity": 0.2001
+        }, 
+        {
+            "package_name": "seahorse", 
+            "similarity": 0.2
+        }, 
+        {
+            "lift": 1.9463053134577, 
+            "package_name": "im-switch"
+        }, 
+        {
+            "lift": 1.94454888926944, 
+            "package_name": "remmina-common"
+        }, 
+        {
+            "lift": 1.92848530460844, 
+            "package_name": "gnomine"
+        }, 
+        {
+            "lift": 1.8730033313508, 
+            "package_name": "rhythmbox-ubuntuone"
+        }, 
+        {
+            "lift": 1.87225561023197, 
+            "package_name": "gwibber"
+        }, 
+        {
+            "lift": 1.44292243618596, 
+            "package_name": "shotwell"
+        }, 
+        {
+            "lift": 1.07216249618328, 
+            "package_name": "checkbox-qt"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "gftp-gtk"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "nautilus-wallpaper"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "volleybrawl"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "granatier"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "gnujump"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "literki"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "gnome-photo-printer"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "pyscrabble"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "photoprint"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "xgnokii"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "epdfview"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "radiotray"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "wakeup"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "gnome-keyring"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "pornview"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "sm"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "openoffice.org"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "nautilus-cd-burner"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "gxine"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "subtitleeditor"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "gcrystal"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "salasaga"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "vectoroids"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "pychess"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "gtk-gnutella"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "stackapplet"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "pino"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "byobu"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "freetennis"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "virtualbox-qt"
+        }
+    ], 
+    "app": "skype"
+}

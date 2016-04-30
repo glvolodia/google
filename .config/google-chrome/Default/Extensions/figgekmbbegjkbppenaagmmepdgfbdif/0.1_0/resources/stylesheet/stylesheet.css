@@ -1,0 +1,12 @@
+p:hover, span:hover, textarea:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+	-webkit-animation: spintext 0.5s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes spintext {
+	0%    {color:#000;}
+	25%   {color:#300;}
+	50%   {color:#600;}
+	75%   {color:#900;}
+	100%  {color:#f00;}
+}

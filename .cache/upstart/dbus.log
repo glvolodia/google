@@ -1,0 +1,16 @@
+Activating service name='org.gtk.vfs.Metadata'
+Successfully activated service 'org.gtk.vfs.Metadata'
+
+** (process:2078): WARNING **: *** Unsupported operation detected on trash directory
+
+** (process:2078): WARNING **:     A trash files/ directory should only have files linked or unlinked (via moves or deletes).  Some other operation has been detected on a file in the directory (eg: a file has been modified).  Likely, the data reported by the trash backend will now be inconsistent.
+
+** (process:2078): WARNING **:   dir: /home/volodia/.local/share/Trash/files, file: google, type: 1
+
+
+
+** (process:2078): WARNING **: *** Unsupported operation detected on trash directory
+
+** (process:2078): WARNING **:   dir: /home/volodia/.local/share/Trash/files, file: hello, type: 1
+
+

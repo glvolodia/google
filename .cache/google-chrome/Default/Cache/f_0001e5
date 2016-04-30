@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<link rel="apple-touch-icon-precomposed" href="http://www.8host.com/blog/wp-content/themes/wp-8host/images/favicon/favicon-152.png">
+	<title>Установка Git на Ubuntu 14.04 | www.8host.com</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="8host.com – Профессиональный облачный хостинг VPS/VDS. Сервера в Европе. Создание сервера 1Gb RAM и 10Gb SSD за 1 минуту. Все виды оплаты: банковские карты, терминалы оплаты, электронные деньги. Работаем с юрлицами и физлицами. Русскоязычная техподдержка для России, Беларуси, Украины, Казахстана и пр. стран СНГ." />
+	<meta name="keywords" content="облачный хостинг, VPS сервер, VDS, хостинг для сайта, VPN, аренда сервера, cloud server, cloud hosting, сервер ubuntu, сервер centos, сервер debian " />
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:700|Open+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css" />
+	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+	<script>
+		var templateUrl = 'http://www.8host.com/blog/wp-content/themes/wp-8host';
+	</script>
+		
+<!-- All in One SEO Pack 2.2.6.1 by Michael Torbert of Semper Fi Web Design[202,256] -->
+<meta name="description" itemprop="description" content="Сегодня система контроля версий – незаменимый инструмент в сфере разработки программного обеспечения. Система управления версиями позволяет отслеживать" />
+
+<meta name="keywords" itemprop="keywords" content="Установка git ubuntu 14.04,установить git ubuntu,что такое git,установка git пошаговое руководство,установка git инструкции,установить git apt,установить git исходный код,как скомпилировать git,базовая Настройка git,git,linux,ubuntu,ubuntu 14.04,vps" />
+
+<link rel="canonical" href="http://www.8host.com/blog/ustanovka-git-na-ubuntu-14-04/" />
+<!-- /all in one seo pack -->
+<link rel='stylesheet' id='siteorigin-panels-front-css'  href='http://www.8host.com/blog/wp-content/plugins/siteorigin-panels/css/front.css?ver=2.1' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://www.8host.com/blog/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' media='all' />
+<script type='text/javascript' src='http://www.8host.com/blog/wp-content/themes/wp-8host/js/jquery.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://www.8host.com/blog/wp-content/themes/wp-8host/js/skel.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://www.8host.com/blog/wp-content/themes/wp-8host/js/skel-layers.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://www.8host.com/blog/wp-content/themes/wp-8host/js/init.js?ver=1.0.0'></script>
+    <noscript>
+		<link rel="stylesheet" href="http://www.8host.com/blog/wp-content/themes/wp-8host/css/skel.css" />
+		<link rel="stylesheet" href="http://www.8host.com/blog/wp-content/themes/wp-8host/css/style.css" />
+		<link rel="stylesheet" href="http://www.8host.com/blog/wp-content/themes/wp-8host/css/style-xlarge.css" />
+	</noscript>
+</head>
+<body class="">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41429720-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	<!-- Header -->
+	<header id="header">
+		<h1><a href="https://www.8host.com"><img src="http://www.8host.com/blog/wp-content/themes/wp-8host/images/logo-8host.png" alt="Профессиональный облачный хостинг. Быстрый, надежный и свободный"/></a></h1>
+		<nav id="nav">
+			<ul>
+				<li>
+					<a href="https://www.8host.com/">Главная</a>
+				</li>
+				<li>
+					<a href="https://www.8host.com/features">Преимущества</a>
+					<div class="drop">
+						<ul class="drop-menu">
+							<li><a href="https://www.8host.com/features#features-tech">Технологии</a>
+								<div class="drop-info hidden">Размещение серверов в надежных дата-центрах Европы. Откройте облачный VPS/VDS сервер на быстрых SSD за 1 минуту!</div>
+							</li>
+
+							<li><a href="https://www.8host.com/features#features-freedom">Свобода и безопасность</a>
+								<div class="drop-info hidden">Лучший хостинг:<br/>- оградит данные от нежелательного доступа в охраняемом европейском ЦОДе<br/>- примет оплату хоть в bitcoin ! <br/>- позволит поставить свой дистрибутив</div>
+							</li>
+
+							<li><a href="https://www.8host.com/features#features-reliability">Надежность</a>
+								<div class="drop-info hidden">- защита от DDos-атак <br/>- бесплатный backup <br/>- Uptime 99,9999% <br/>- ЦОД - TIER III <br/>- провайдер - TIER I</div>
+							</li>
+
+							<li><a href="https://www.8host.com/features#features-access">Доступность</a>
+								<div class="drop-info hidden">Поддержим на русском языке 24/7/365 Работаем с юрлицами и физлицами. Вам прямо сейчас нужно 24 ядра и 72 Gb RAM ? Пожалуйста!</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="https://www.8host.com/pricing">Стоимость</a>
+					<div class="drop drop-cost">
+						<ul class="drop-menu">
+							<li><a href="https://www.8host.com/pricing">Цены</a>
+								<div class="drop-info hidden">Наши выгодные тарифы докажут, что дешевый хостинг вы еще не знали!</div>
+							</li>
+
+							<li><a href="https://www.8host.com/pricing#payment-methods">Способы оплаты</a>
+								<div class="drop-info hidden">Банковскими картами, электронной валютой, через терминалы Qiwi, Webmoney, PayPal, Новоплат и др.</div>
+							</li>
+
+							<li><a href="https://www.8host.com/pricing">Купить хостинг</a>
+								<div class="drop-info hidden">Минутное дело: выберите конфигурацию и оплатите. <br/>Money Back – 30 дней!</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="https://www.8host.com/blog/">Информаторий</a>
+					<div class="drop drop-informateka">
+						<ul class="drop-menu">
+							<li><a href="https://www.8host.com/contact-us">Техподдержка</a>
+								<div class="drop-info hidden">Задайте вопрос в службу поддержки 24/7/365</div>
+							</li>
+
+							<li><a href="https://www.8host.com/blog">База знаний</a>
+								<div class="drop-info hidden">Найдите ответы в нашей базе и познакомьтесь с рекомендациями</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="https://www.8host.com/contact-us">Контакты</a>
+					<div class="drop drop-informateka">
+						<ul class="drop-menu">
+							<li><a href="https://www.facebook.com/pages/8Host/1063590243670236?ref=hl">Facebook</a></li>
+							<li><a href="https://twitter.com/8Host_social">Twitter</a></li>
+							<li><a href="https://plus.google.com/u/0/b/105145648824775848083/105145648824775848083/about">Google+</a></li>
+							<li><a href="https://www.linkedin.com/grp/home?gid=8310064">Linkedin</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="https://www.8host.com/portal/" class="button login-special">Вход</a></li>
+				<li><a href="https://www.8host.com/portal/register.php" class="button register-special">Регистрация</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+
+
+
+
+
+
+
+
+<section class="wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="9u 12u$(small)">
+
+				<main role="main">
+					<!-- section -->
+					<section>
+
+						
+						<!-- article -->
+						<article id="post-507" class="post-507 post type-post status-publish format-standard hentry category-ubuntu category-vps tag-git tag-linux tag-ubuntu tag-ubuntu-14-04 tag-vps">
+
+							<!-- post thumbnail -->
+													<!-- /post thumbnail -->
+
+						<!-- post title -->
+						<header class="major article-header">
+							<h1>
+								<a href="http://www.8host.com/blog/ustanovka-git-na-ubuntu-14-04/" title="Установка Git на Ubuntu 14.04">Установка Git на Ubuntu 14.04</a>
+							</h1>
+						</header>
+						<!-- /post title -->
+
+						<!-- post details -->
+						<span class="date article-date"><img src="http://www.8host.com/blog/wp-content/themes/wp-8host/images/calendar.png" />Июль 18, 2014 12:33 пп</span>
+						<p class="article-category single-post-category"><img src="http://www.8host.com/blog/wp-content/themes/wp-8host/images/tags.png" /><a href="http://www.8host.com/blog/category/ubuntu/" rel="tag">Ubuntu</a>, <a href="http://www.8host.com/blog/category/vps/" rel="tag">VPS</a></p>
+						<span class="author">Published by <a href="http://www.8host.com/blog/author/amber/" title="Записи Amber" rel="author">Amber</a></span>
+						<span class="comments"><a href="http://www.8host.com/blog/ustanovka-git-na-ubuntu-14-04/#respond" title="Прокомментировать запись &laquo;Установка Git на Ubuntu 14.04&raquo;">Leave your thoughts</a></span>
+						<!-- /post details -->
+
+						<p><span style="line-height: 1.714285714; font-size: 1rem;">Сегодня система контроля версий – незаменимый инструмент в сфере разработки программного обеспечения. Система управления версиями позволяет отслеживать программное обеспечение на уровне исходного кода, возвращаться к предыдущим этапам, а также переходить к созданию альтернативных версий файлов и каталогов.</span></p>
+<p>Одной из самых популярных систем такого рода является git, распределенная система контроля версий. Многие проекты хранят свои файлы в репозитории Git, а такие сайты, как GitHub и Bitbucket, значительно упростили процессы обмена и распространения кода.</p>
+<p>Данное руководство демонстрирует установку git на сервер Ubuntu 14.04. Оно охватывает два способа установки программного обеспечения, каждый из которых имеет свои преимущества.<span id="more-507"></span></p>
+<p style="padding-left: 30px;"><strong>Примечание</strong>: сначала войдите в систему как новый (не root) пользователь с root-привилегиями; чтобы узнать, как создать такого пользователя, прочтите <a href="http://www.8host.com/blog/nachalnaya-nastrojka-servera-ubuntu-14-04/">данное руководство</a>.</p>
+<h2><b>Установка </b><b>Git с помощью </b><b>Apt</b></h2>
+<p>До настоящего момента самым простым способом установки git и подготовки программы к работе является использование репозитория Ubuntu по умолчанию. Конечно, это самый быстрый способ, но он имеет недостаток: версия программы в репозитории может быть устаревшей. Чтобы получить последнюю версию, выполните следующие действия для компиляции Git из исходного кода.</p>
+<p>Используйте инструмент управления пакетами apt для обновления локального индекса пакетов. После этого загрузите и установите программу:</p>
+<p><code>sudo apt-get update<br />
+sudo apt-get install git</code></p>
+<p>Эти команды скачают необходимые пакеты и установят git. Тем не менее, нужно будет выполнить действия, описанные в разделе «Настройка git», прежде чем приступать к работе.</p>
+<h2><b>Установка git из исходного кода</b></h2>
+<p>Более гибким способом установки git является компилирование программы из исходного кода. Компиляция занимает больше времени и ее нельзя выполнить с помощью менеджера пакетов, но зато это позволяет скачать последнюю доступную версию программы, а также дает некоторый контроль над параметрами.</p>
+<p>Прежде чем приступить к компиляции, нужно установить программы, от которых зависит git. Все они доступны в репозиториях по умолчанию, потому можно просто обновить локальный индекс и установить пакеты:</p>
+<p><code>sudo apt-get update<br />
+sudo apt-get install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip</code></p>
+<p>Установив все зависимости, приступайте к установке любой необходимой версии git, посетив <a href="https://github.com/git/git">страницу проекта на GitHub</a>.</p>
+<p>Чтобы получить последнюю стабильную версию, нужно изменить ветку до последней (не rc) с помощью кнопки в левой части страницы:<img class="aligncenter" alt="git_install" src="https://assets.digitalocean.com/articles/git_install_1404/change_branch.png" width="376" height="402" /></p>
+<p>Далее, на правой стороне страницы, щелкните правой кнопкой мыши на кнопку Download ZIP и выберите опцию вроде Copy Link Address:</p>
+<p><img class="aligncenter" alt="git_install2" src="https://assets.digitalocean.com/articles/git_install_1404/download_zip.png" width="306" height="284" /></p>
+<p>Вернитесь на сервер Ubuntu 14.04, введите wget и вставьте только что скопированный адрес.</p>
+<p style="padding-left: 30px;"><strong>Обратите внимание</strong>: скопированный вами URL может отличаться от URL в примере.</p>
+<p><code>wget <span style="color: #ff0000;">https://github.com/git/git/archive/v1.9.2.zip</span> -O git.zip</code></p>
+<p>Распакуйте загруженный файл и перейдите в каталог с этим файлом, набрав:</p>
+<p><code>unzip git.zip<br />
+cd git-*</code></p>
+<p>Теперь можно использовать команду make и установить пакет при помощи:</p>
+<p><code>make prefix=/usr/local all<br />
+sudo make prefix=/usr/local install</code></p>
+<p>Готово! Программа git установлена на сервер. Чтобы обновить ее до последней версии, клонируйте файл из репозитория, после чего соберите и установите его:</p>
+<p><code>git clone https://github.com/git/git.git</code></p>
+<p>Чтобы найти URL для выполнения клонирования, перейдите к необходимой ветке или тегу на <a href="https://github.com/git/git">странице проекта на GitHub</a> и скопируйте URL справа:</p>
+<p><img class="aligncenter" alt="git_install3" src="https://assets.digitalocean.com/articles/git_install_1404/clone_url.png" width="185" height="94" /></p>
+<p>Это действие создаст внутри текущего каталога новый каталог, в котором можно снова собрать пакет и установить более новую версию, как уже было показано выше. При этом устаревшая версия будет переписана новой версией программы:</p>
+<p><code>make prefix=/usr/local all<br />
+sudo make prefix=/usr/local install</code></p>
+<h2><b>Настройка Git</b></h2>
+<p>Теперь, когда система git установлена, нужно выполнить несколько действий, чтобы сообщения о завершении транзакции, которые вы будете получать в дальнейшем, содержали правильную информацию.</p>
+<p>Самым простым способом сделать это является команда git config. На данном этапе нужно указать имя и адрес электронной почты, потому что git встраивает эту информацию в каждую фиксацию. Добавить эту информацию можно, набрав:</p>
+<p><code>git config --global user.name "<span style="color: #ff0000;">Your Name</span>"<br />
+git config --global user.email "<span style="color: #ff0000;">youremail@domain.com</span>"</code></p>
+<p>Чтобы просмотреть все элементы конфигурации, которые были установлены, наберите:</p>
+<p><code>git config --list<br />
+user.name=<span style="color: #ff0000;">Your Name</span><br />
+user.email=<span style="color: #ff0000;">youremail@domain.com</span></code></p>
+<p>Как видите, этот список имеет немного другой формат. Информация хранится в конфигурационном файле, который можно дополнительно редактировать вручную (в текстовом редакторе):</p>
+<p><code>nano ~/.gitconfig<br />
+[user]<br />
+name = <span style="color: #ff0000;">Your Name</span><br />
+email = <span style="color: #ff0000;">youremail@domain.com</span></code></p>
+<p>Существует огромное количество опций, которые можно использовать для настройки git, но эти две опции – самые необходимые из них. При невыполнении этого шага появится подобное предупреждение:</p>
+<p><code>[master 0d9d21d] initial project version<br />
+Committer: root<br />
+Your name and email address were configured automatically based<br />
+on your username and hostname. Please check that they are accurate.<br />
+You can suppress this message by setting them explicitly:<br />
+git config --global user.name "Your Name"<br />
+git config --global user.email you@example.com<br />
+After doing this, you may fix the identity used for this commit with:<br />
+git commit --amend --reset-author</code></p>
+<p>Это увеличит объем работы, поскольку потом нужно будет пересмотреть все сообщения с исправленной информацией.</p>
+<h2>Итоги</h2>
+<p>Теперь система контроля версий git установлена и готова к работе. Чтобы узнать об использовании git больше, читайте:</p>
+<ul>
+<li><a href="http://www.8host.com/blog/produktivnoe-ispolzovanie-git/">Продуктивное использование git</a></li>
+<li><a href="http://www.8host.com/blog/ispolzovanie-vetok-git/">Использование веток Git</a></li>
+</ul>
+
+						Tags: <a href="http://www.8host.com/blog/tag/git/" rel="tag">Git</a>, <a href="http://www.8host.com/blog/tag/linux/" rel="tag">Linux</a>, <a href="http://www.8host.com/blog/tag/ubuntu/" rel="tag">Ubuntu</a>, <a href="http://www.8host.com/blog/tag/ubuntu-14-04/" rel="tag">Ubuntu 14.04</a>, <a href="http://www.8host.com/blog/tag/vps/" rel="tag">VPS</a><br>
+						
+						<div class="comments">
+	
+
+								<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Добавить комментарий <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/ustanovka-git-na-ubuntu-14-04/#respond" style="display:none;">Отменить ответ</a></small></h3>
+									<form action="http://www.8host.com/blog/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																			<p class="comment-notes"><span id="email-notes">Ваш e-mail не будет опубликован.</span> Обязательные поля помечены <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Имя <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-email"><label for="email">E-mail <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' /></p>
+<p class="comment-form-url"><label for="url">Сайт</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+
+<div class="captchaSizeDivLarge"><img id="si_image_com" class="si-captcha" src="http://www.8host.com/blog/wp-content/plugins/si-captcha-for-wordpress/captcha/securimage_show.php?si_form_id=com&amp;prefix=wkU3mPA3qUgEqrFt" width="175" height="60" alt="CAPTCHA изображение" title="CAPTCHA изображение" />
+    <input id="si_code_com" name="si_code_com" type="hidden"  value="wkU3mPA3qUgEqrFt" />
+    <div id="si_refresh_com">
+<a href="#" rel="nofollow" title="Обновить изображение" onclick="si_captcha_refresh('si_image_com','com','/blog/wp-content/plugins/si-captcha-for-wordpress/captcha','http://www.8host.com/blog/wp-content/plugins/si-captcha-for-wordpress/captcha/securimage_show.php?si_form_id=com&amp;prefix='); return false;">
+      <img class="captchaImgRefresh" src="http://www.8host.com/blog/wp-content/plugins/si-captcha-for-wordpress/captcha/images/refresh.png" width="22" height="20" alt="Обновить изображение" onclick="this.blur();" /></a>
+  </div>
+  </div>
+<br />
+<p><input id="captcha_code" name="captcha_code" type="text" size="6"  />
+<label id="captcha_code_label" for="captcha_code" >CAPTCHA Code</label><span class="required"> *</span>
+</p>												<p class="comment-form-comment"><label for="comment">Комментарий</label> <textarea id="comment" name="comment" cols="45" rows="8" aria-describedby="form-allowed-tags" aria-required="true"></textarea></p>						<p class="form-allowed-tags" id="form-allowed-tags">Можно использовать следующие <abbr title="HyperText Markup Language">HTML</abbr>-теги и атрибуты:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" class="submit" value="Отправить комментарий" />
+							<input type='hidden' name='comment_post_ID' value='507' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+											</form>
+							</div><!-- #respond -->
+			
+</div>
+
+					</article>
+					<!-- /article -->
+
+				
+			
+	</section>
+	<!-- /section -->
+</main>
+</div>
+
+<div class="3u 12u$(small) article-sidebar">
+
+	<!-- sidebar -->
+<aside class="sidebar" role="complementary">
+
+	<div class="sidebar-widget">
+		<div id="categories-2" class="widget_categories"><h3>Рубрики</h3>		<ul>
+	<li class="cat-item cat-item-58"><a href="http://www.8host.com/blog/category/arch-linux/" >Arch Linux</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://www.8host.com/blog/category/centos/" >Centos</a>
+</li>
+	<li class="cat-item cat-item-57"><a href="http://www.8host.com/blog/category/cloud-server/" >Cloud Server</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="http://www.8host.com/blog/category/debian/" >Debian</a>
+</li>
+	<li class="cat-item cat-item-600"><a href="http://www.8host.com/blog/category/freebsd/" >FreeBSD</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://www.8host.com/blog/category/ftp/" >FTP</a>
+</li>
+	<li class="cat-item cat-item-38"><a href="http://www.8host.com/blog/category/general/" >General</a>
+</li>
+	<li class="cat-item cat-item-179"><a href="http://www.8host.com/blog/category/java/" >Java</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="http://www.8host.com/blog/category/lampstack/" >LAMPStack</a>
+</li>
+	<li class="cat-item cat-item-209"><a href="http://www.8host.com/blog/category/lemp-stack/" >LEMP Stack</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://www.8host.com/blog/category/linux/" >Linux</a>
+</li>
+	<li class="cat-item cat-item-235"><a href="http://www.8host.com/blog/category/mariadb/" >MariaDB</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="http://www.8host.com/blog/category/mysql/" >mySQL</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://www.8host.com/blog/category/php/" >PHP</a>
+</li>
+	<li class="cat-item cat-item-106"><a href="http://www.8host.com/blog/category/python/" >Python</a>
+</li>
+	<li class="cat-item cat-item-644"><a href="http://www.8host.com/blog/category/rhel/" >RHEL</a>
+</li>
+	<li class="cat-item cat-item-2"><a href="http://www.8host.com/blog/category/ruby/" >Ruby</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://www.8host.com/blog/category/ssh/" >SSH</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://www.8host.com/blog/category/ubuntu/" >Ubuntu</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://www.8host.com/blog/category/uncategorized/" >Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="http://www.8host.com/blog/category/vps/" >VPS</a>
+</li>
+		</ul>
+</div><style scoped type="text/css">.utcw-857bnk3 {word-wrap:break-word}.utcw-857bnk3 span,.utcw-857bnk3 a{border-width:0px}.utcw-857bnk3 span:hover,.utcw-857bnk3 a:hover{border-width:0px}</style><div id="utcw-2" class="widget_utcw widget_tag_cloud"><h3>Поиск по меткам</h3><div class="utcw-857bnk3 tagcloud"><a class="tag-link-270" href="http://www.8host.com/blog/tag/htaccess/" style="font-size:10.862745098039px" title="25 topics">.htaccess</a> <a class="tag-link-13" href="http://www.8host.com/blog/tag/apache/" style="font-size:19.56862745098px" title="136 topics">Apache</a> <a class="tag-link-58" href="http://www.8host.com/blog/tag/arch-linux/" style="font-size:10.392156862745px" title="19 topics">Arch Linux</a> <a class="tag-link-14" href="http://www.8host.com/blog/tag/centos-2/" style="font-size:16.43137254902px" title="96 topics">CentOS</a> <a class="tag-link-169" href="http://www.8host.com/blog/tag/centos-6/" style="font-size:12.274509803922px" title="43 topics">CentOS 6</a> <a class="tag-link-299" href="http://www.8host.com/blog/tag/centos-7/" style="font-size:12.352941176471px" title="44 topics">CentOS 7</a> <a class="tag-link-57" href="http://www.8host.com/blog/tag/cloud-server/" style="font-size:19.882352941176px" title="140 topics">Cloud Server</a> <a class="tag-link-52" href="http://www.8host.com/blog/tag/debian/" style="font-size:13.21568627451px" title="55 topics">Debian</a> <a class="tag-link-54" href="http://www.8host.com/blog/tag/debian-7/" style="font-size:11.333333333333px" title="31 topics">Debian 7</a> <a class="tag-link-104" href="http://www.8host.com/blog/tag/django/" style="font-size:10.470588235294px" title="20 topics">Django</a> <a class="tag-link-230" href="http://www.8host.com/blog/tag/dns/" style="font-size:10.235294117647px" title="17 topics">DNS</a> <a class="tag-link-200" href="http://www.8host.com/blog/tag/epel/" style="font-size:10.470588235294px" title="20 topics">EPEL</a> <a class="tag-link-53" href="http://www.8host.com/blog/tag/git/" style="font-size:11.882352941176px" title="38 topics">Git</a> <a class="tag-link-243" href="http://www.8host.com/blog/tag/github/" style="font-size:10.392156862745px" title="19 topics">Github</a> <a class="tag-link-59" href="http://www.8host.com/blog/tag/iptables/" style="font-size:10.627450980392px" title="22 topics">Iptables</a> <a class="tag-link-179" href="http://www.8host.com/blog/tag/java/" style="font-size:10.941176470588px" title="26 topics">Java</a> <a class="tag-link-193" href="http://www.8host.com/blog/tag/javascript/" style="font-size:10px" title="14 topics">Javascript</a> <a class="tag-link-269" href="http://www.8host.com/blog/tag/lamp-stack/" style="font-size:13.843137254902px" title="63 topics">LAMP stack</a> <a class="tag-link-209" href="http://www.8host.com/blog/tag/lemp-stack/" style="font-size:10.078431372549px" title="15 topics">LEMP Stack</a> <a class="tag-link-3" href="http://www.8host.com/blog/tag/linux/" style="font-size:30px" title="269 topics">Linux</a> <a class="tag-link-235" href="http://www.8host.com/blog/tag/mariadb/" style="font-size:10.313725490196px" title="18 topics">MariaDB</a> <a class="tag-link-271" href="http://www.8host.com/blog/tag/mod_rewrite/" style="font-size:10.313725490196px" title="18 topics">Mod_Rewrite</a> <a class="tag-link-158" href="http://www.8host.com/blog/tag/mvc/" style="font-size:10.313725490196px" title="18 topics">MVC</a> <a class="tag-link-167" href="http://www.8host.com/blog/tag/mysql-2/" style="font-size:16.980392156863px" title="103 topics">MySQL</a> <a class="tag-link-120" href="http://www.8host.com/blog/tag/nginx/" style="font-size:17.529411764706px" title="110 topics">NGINX</a> <a class="tag-link-192" href="http://www.8host.com/blog/tag/node-js/" style="font-size:11.56862745098px" title="34 topics">Node.js</a> <a class="tag-link-194" href="http://www.8host.com/blog/tag/npm/" style="font-size:10px" title="14 topics">npm</a> <a class="tag-link-16" href="http://www.8host.com/blog/tag/php/" style="font-size:16.117647058824px" title="92 topics">PHP</a> <a class="tag-link-108" href="http://www.8host.com/blog/tag/pip/" style="font-size:10.235294117647px" title="17 topics">pip</a> <a class="tag-link-144" href="http://www.8host.com/blog/tag/postgresql/" style="font-size:10.627450980392px" title="22 topics">PostgreSQL</a> <a class="tag-link-106" href="http://www.8host.com/blog/tag/python/" style="font-size:11.960784313725px" title="39 topics">Python</a> <a class="tag-link-437" href="http://www.8host.com/blog/tag/rails/" style="font-size:10.627450980392px" title="22 topics">Rails</a> <a class="tag-link-147" href="http://www.8host.com/blog/tag/rhel/" style="font-size:10px" title="14 topics">RHEL</a> <a class="tag-link-2" href="http://www.8host.com/blog/tag/ruby/" style="font-size:11.56862745098px" title="34 topics">Ruby</a> <a class="tag-link-4" href="http://www.8host.com/blog/tag/ruby-on-rails/" style="font-size:10.862745098039px" title="25 topics">Ruby on Rails</a> <a class="tag-link-5" href="http://www.8host.com/blog/tag/rvm/" style="font-size:10.235294117647px" title="17 topics">RVM</a> <a class="tag-link-17" href="http://www.8host.com/blog/tag/ssh/" style="font-size:13.058823529412px" title="53 topics">SSH</a> <a class="tag-link-130" href="http://www.8host.com/blog/tag/ssl/" style="font-size:11.803921568627px" title="37 topics">SSL</a> <a class="tag-link-6" href="http://www.8host.com/blog/tag/ubuntu/" style="font-size:26.235294117647px" title="221 topics">Ubuntu</a> <a class="tag-link-24" href="http://www.8host.com/blog/tag/ubuntu-12-04/" style="font-size:19.647058823529px" title="137 topics">Ubuntu 12.04</a> <a class="tag-link-35" href="http://www.8host.com/blog/tag/ubuntu-12-10/" style="font-size:11.098039215686px" title="28 topics">Ubuntu 12.10</a> <a class="tag-link-191" href="http://www.8host.com/blog/tag/ubuntu-14-04/" style="font-size:18.470588235294px" title="122 topics">Ubuntu 14.04</a> <a class="tag-link-107" href="http://www.8host.com/blog/tag/virtualenv/" style="font-size:10.627450980392px" title="22 topics">virtualenv</a> <a class="tag-link-37" href="http://www.8host.com/blog/tag/vps/" style="font-size:29.843137254902px" title="267 topics">VPS</a> <a class="tag-link-205" href="http://www.8host.com/blog/tag/wordpress/" style="font-size:11.411764705882px" title="32 topics">WordPress</a></div></div><div id="archives-2" class="widget_archive"><h3>Архивы</h3>		<ul>
+	<li><a href='http://www.8host.com/blog/2016/02/'>Февраль 2016</a>&nbsp;(23)</li>
+	<li><a href='http://www.8host.com/blog/2016/01/'>Январь 2016</a>&nbsp;(31)</li>
+	<li><a href='http://www.8host.com/blog/2015/12/'>Декабрь 2015</a>&nbsp;(31)</li>
+	<li><a href='http://www.8host.com/blog/2015/11/'>Ноябрь 2015</a>&nbsp;(30)</li>
+	<li><a href='http://www.8host.com/blog/2015/10/'>Октябрь 2015</a>&nbsp;(31)</li>
+	<li><a href='http://www.8host.com/blog/2015/09/'>Сентябрь 2015</a>&nbsp;(30)</li>
+	<li><a href='http://www.8host.com/blog/2015/08/'>Август 2015</a>&nbsp;(31)</li>
+	<li><a href='http://www.8host.com/blog/2015/07/'>Июль 2015</a>&nbsp;(31)</li>
+	<li><a href='http://www.8host.com/blog/2015/06/'>Июнь 2015</a>&nbsp;(30)</li>
+	<li><a href='http://www.8host.com/blog/2015/05/'>Май 2015</a>&nbsp;(31)</li>
+	<li><a href='http://www.8host.com/blog/2015/04/'>Апрель 2015</a>&nbsp;(30)</li>
+	<li><a href='http://www.8host.com/blog/2015/03/'>Март 2015</a>&nbsp;(31)</li>
+	<li><a href='http://www.8host.com/blog/2015/02/'>Февраль 2015</a>&nbsp;(28)</li>
+	<li><a href='http://www.8host.com/blog/2015/01/'>Январь 2015</a>&nbsp;(31)</li>
+	<li><a href='http://www.8host.com/blog/2014/12/'>Декабрь 2014</a>&nbsp;(31)</li>
+	<li><a href='http://www.8host.com/blog/2014/11/'>Ноябрь 2014</a>&nbsp;(30)</li>
+	<li><a href='http://www.8host.com/blog/2014/10/'>Октябрь 2014</a>&nbsp;(31)</li>
+	<li><a href='http://www.8host.com/blog/2014/09/'>Сентябрь 2014</a>&nbsp;(30)</li>
+	<li><a href='http://www.8host.com/blog/2014/08/'>Август 2014</a>&nbsp;(31)</li>
+	<li><a href='http://www.8host.com/blog/2014/07/'>Июль 2014</a>&nbsp;(31)</li>
+	<li><a href='http://www.8host.com/blog/2014/06/'>Июнь 2014</a>&nbsp;(25)</li>
+	<li><a href='http://www.8host.com/blog/2014/05/'>Май 2014</a>&nbsp;(22)</li>
+	<li><a href='http://www.8host.com/blog/2014/04/'>Апрель 2014</a>&nbsp;(22)</li>
+	<li><a href='http://www.8host.com/blog/2014/03/'>Март 2014</a>&nbsp;(20)</li>
+	<li><a href='http://www.8host.com/blog/2014/02/'>Февраль 2014</a>&nbsp;(6)</li>
+	<li><a href='http://www.8host.com/blog/2014/01/'>Январь 2014</a>&nbsp;(12)</li>
+	<li><a href='http://www.8host.com/blog/2013/12/'>Декабрь 2013</a>&nbsp;(11)</li>
+		</ul>
+</div>	</div>
+
+	<div class="sidebar-widget">
+			</div>
+
+</aside>
+<!-- /sidebar -->
+</div>
+</div>
+
+
+
+</div>
+</section>
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer id="footer">
+	<div class="container">
+		<section class="links">
+			<div class="row">
+				<section class="3u 6u(medium) 12u$(small)">
+					<h3>Продукт</h3>
+					<ul class="unstyled">
+						<li><a href="https://www.8host.com/pricing">Цены</a></li>
+						<li><a href="https://www.8host.com/features">Преимущества</a></li>
+						<li><a href="https://www.8host.com/pricing#payment-methods">Способы оплаты</a></li>
+<!--						<li><a href="http://www.8host.com/features#features-tech">Технологии</a></li>
+						<li><a href="#">API</a></li>-->
+					</ul>
+				</section>
+				<section class="3u 6u$(medium) 12u$(small)">
+					<h3>Компания</h3>
+					<ul class="unstyled">
+						<li><a href="https://www.8host.com/features#features-freedom">О нас</a></li>
+						<li><a href="https://www.8host.com/blog/">Блог</a></li>
+						<li><a href="https://www.8host.com/contact-us">Контакты</a></li>
+<!--						<li><a href="#">События</a></li>
+						<li><a href="#">Лого и бейджи</a></li>
+						<li><a href="#">Пресса</a></li>  -->
+					</ul>
+				</section>
+				<section class="3u 6u(medium) 12u$(small)">
+					<h3>Помощь</h3>
+					<ul class="unstyled">
+						<li><a href="https://www.8host.com/blog/">Информаторий</a></li>
+						<li><a href="https://www.8host.com/contact-us">Техподдержка</a></li>
+						<li><a href="https://www.8host.com/contact-us">Оставить запрос</a></li>
+<!--						<li><a href="#">Статус сети</a></li>
+						<li><a href="#">Вопросы и ответы</a></li>   -->
+					</ul>
+				</section>
+				<section class="3u$ 6u$(medium) 12u$(small)">
+					<h3>Преимущества</h3>
+					<ul class="unstyled">
+						<li><a href="https://www.8host.com/features#features-tech">Технологии</a></li>
+						<li><a href="https://www.8host.com/features#features-freedom">Свобода и безопасность</a></li>
+						<li><a href="https://www.8host.com/features#features-reliability">Надежность</a></li>
+						<li><a href="https://www.8host.com/features#features-access">Доступность</a></li>
+					</ul>
+				</section>
+			</div>
+		</section>
+	</div>
+	<section class="under-footer">
+		<div class="container">
+			<div class="row">
+				<div class="8u 12u$(medium)">
+					<ul class="copyright">
+						<li>© 2015 www.8host.com</li>
+						<li><a href='http://www.8host.com/privacy.php'>Безопасность</a></li>
+						<li><a href='http://www.8host.com/terms-and-conditions.php'>Условия предоставления услуг</a></li>
+					</ul>
+				</div>
+				<div class="4u$ 12u$(medium)">
+					<ul class="icons">
+						<li>
+							<a class="icon rounded fa-facebook" href="https://www.facebook.com/pages/8Host/1063590243670236?ref=hl"><span class="label">Facebook</span></a>
+						</li>
+						<li>
+							<a class="icon rounded fa-twitter" href="https://twitter.com/8Host_social"><span class="label">Twitter</span></a>
+						</li>
+						<li>
+							<a class="icon rounded fa-google-plus" href="https://plus.google.com/u/0/b/105145648824775848083/105145648824775848083/about"><span class="label">Google+</span></a>
+						</li>
+						<li>
+							<a class="icon rounded fa-linkedin" href="https://www.linkedin.com/grp/home?gid=8310064"><span class="label">LinkedIn</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
+</body>
+</html>

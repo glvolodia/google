@@ -1,0 +1,6 @@
+services.addons.mozilla.org:HSTS	0	16852	1487603248947,1,0
+stats.g.doubleclick.net:HSTS	0	16852	1466953174628,1,0
+2542116.fls.doubleclick.net:HSTS	0	16852	1456089070486,1,0
+blocklist.addons.mozilla.org:HSTS	0	16852	1487603367962,1,0
+support.google.com:HSTS	0	16852	1487603463428,1,1
+apis.google.com:HSTS	0	16852	1466953442183,1,0

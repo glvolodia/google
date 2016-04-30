@@ -1,0 +1,19 @@
+{
+   "content_scripts": [ {
+      "css": [ "resources/stylesheet/stylesheet.css" ],
+      "js": [ "resources/javascript/javascript.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "Highlight the text the mouse is hovering over",
+   "icons": {
+      "128": "resources/pictures/biggest.png",
+      "16": "resources/pictures/big.png",
+      "48": "resources/pictures/bigger.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl0a7xdbFKiJPK8BGp1q2KJEVA8zS9YwiaydzFvN1HtDS88P14HXp5jz4rmdfyZBuuyfwsySX8lXzlEbo4kTa4a7avDk5kLJTvvqEbcjGDjKCCfgPYM9NKW4Kv0VqsKlH3GXGbQDkL7fCz0r8FrepvrL21U6D4RLotUlPh22D0jfw3jicQ5tKdgZY4h3exTNYqE3M6Dx3KUrfe0rwy4Z4eU9+Z3rbqCHgCRFHKuaVxKSMvanT82m8xvA/sZUP3eVGofYBtN/yt6WzcY++ZkEEfc5gLwFl0f3EGE7CJ4So2HK6JovHiSovZOK7bRhHtCoVgPTfDErOJI0xXqEE5rVRSwIDAQAB",
+   "manifest_version": 2,
+   "name": "Play Text",
+   "permissions": [ "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1"
+}

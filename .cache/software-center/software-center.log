@@ -1,0 +1,207 @@
+2016-02-21 17:12:12,862 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2016-02-21 17:12:13,522 - softwarecenter.region - WARNING - failed to use geoclue: 'org.freedesktop.Geoclue.Error.notAvailable: Geoclue master client has no usable Address providers'
+2016-02-21 17:12:13,761 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2016-02-21 17:12:13,775 - softwarecenter.plugin - INFO - activating plugin '<module 'webapps_activation' from '/usr/share/software-center/softwarecenter/plugins/webapps_activation.pyc'>'
+2016-02-21 17:12:13,935 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2016-02-21 17:12:20,588 - softwarecenter.backend.reviews - WARNING - error creating bsddb: '(22, '\xd0\x9d\xd0\xb5\xd0\xba\xd0\xbe\xd1\x80\xd0\xb5\xd0\xba\xd1\x82\xd0\xbd\xd0\xb8\xd0\xb9 \xd0\xb0\xd1\x80\xd0\xb3\xd1\x83\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82 -- BDB0054 illegal flag combination specified to DB_ENV->open')' (corrupted?)
+2016-02-21 17:12:20,588 - softwarecenter.backend.reviews - ERROR - trying to repair DB failed
+Traceback (most recent call last):
+  File "/usr/share/software-center/softwarecenter/backend/reviews/__init__.py", line 358, in _save_review_stats_cache_blocking
+    self._dump_bsddbm_for_unity(outfile, outdir)
+  File "/usr/share/software-center/softwarecenter/backend/reviews/__init__.py", line 377, in _dump_bsddbm_for_unity
+    0600)
+DBInvalidArgError: (22, '\xd0\x9d\xd0\xb5\xd0\xba\xd0\xbe\xd1\x80\xd0\xb5\xd0\xba\xd1\x82\xd0\xbd\xd0\xb8\xd0\xb9 \xd0\xb0\xd1\x80\xd0\xb3\xd1\x83\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82 -- BDB0054 illegal flag combination specified to DB_ENV->open')
+2016-02-21 17:12:20,633 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'leadwerks\r\nleadwerks-indie'' not available
+2016-02-21 17:12:24,931 - softwarecenter.db.pkginfo_impl.aptcache - ERROR - simulate failed
+None
+2016-02-21 17:12:28,285 - softwarecenter.db.utils - INFO - software-center-agent finished with status 0
+2016-02-21 17:14:43,240 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2016-02-21 17:14:55,826 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2016-02-21 17:15:03,684 - softwarecenter.utils - WARNING - Could not determine the installed desktop file path for app-install desktop file: 'None'
+2016-02-21 17:15:03,685 - softwarecenter.backend.zeitgeist_logger - WARNING - Invalid desktop file provided, impossible to log event
+2016-02-21 17:16:48,129 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2016-02-21 17:16:50,871 - softwarecenter.utils - WARNING - Could not determine the installed desktop file path for app-install desktop file: 'None'
+2016-02-21 17:16:50,872 - softwarecenter.backend.zeitgeist_logger - WARNING - Invalid desktop file provided, impossible to log event
+2016-02-21 17:25:52,443 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2016-02-21 17:25:53,217 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2016-02-21 17:25:53,219 - softwarecenter.plugin - INFO - activating plugin '<module 'webapps_activation' from '/usr/share/software-center/softwarecenter/plugins/webapps_activation.pyc'>'
+2016-02-21 17:25:53,341 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2016-02-21 17:25:56,545 - softwarecenter.backend.reviews - WARNING - error creating bsddb: '(22, '\xd0\x9d\xd0\xb5\xd0\xba\xd0\xbe\xd1\x80\xd0\xb5\xd0\xba\xd1\x82\xd0\xbd\xd0\xb8\xd0\xb9 \xd0\xb0\xd1\x80\xd0\xb3\xd1\x83\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82 -- BDB0054 illegal flag combination specified to DB_ENV->open')' (corrupted?)
+2016-02-21 17:25:56,546 - softwarecenter.backend.reviews - ERROR - trying to repair DB failed
+Traceback (most recent call last):
+  File "/usr/share/software-center/softwarecenter/backend/reviews/__init__.py", line 358, in _save_review_stats_cache_blocking
+    self._dump_bsddbm_for_unity(outfile, outdir)
+  File "/usr/share/software-center/softwarecenter/backend/reviews/__init__.py", line 377, in _dump_bsddbm_for_unity
+    0600)
+DBInvalidArgError: (22, '\xd0\x9d\xd0\xb5\xd0\xba\xd0\xbe\xd1\x80\xd0\xb5\xd0\xba\xd1\x82\xd0\xbd\xd0\xb8\xd0\xb9 \xd0\xb0\xd1\x80\xd0\xb3\xd1\x83\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82 -- BDB0054 illegal flag combination specified to DB_ENV->open')
+2016-02-21 17:25:56,823 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'leadwerks\r\nleadwerks-indie'' not available
+2016-02-21 17:26:03,708 - softwarecenter.db.utils - INFO - software-center-agent finished with status 0
+2016-02-21 17:26:18,256 - softwarecenter.ui.gtk3.app - INFO - found a running software-center on dbus, reconnecting
+2016-02-21 17:34:42,349 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2016-02-21 17:34:52,242 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2016-02-21 17:39:03,132 - softwarecenter.backend.spawn_helper - WARNING - exit code 1 from helper for '['/usr/share/software-center/piston_get_reviews_helper.py', '--language', 'uk', '--origin', 'any', '--distroseries', 'any', '--pkgname', 'skype', '--page', '1', '--sort', 'helpful']'
+2016-02-21 17:39:03,134 - softwarecenter.backend.spawn_helper - WARNING - got error from helper: 'Traceback (most recent call last):
+  File "/usr/share/software-center/piston_get_reviews_helper.py", line 79, in <module>
+    piston_reviews = try_get_reviews(kwargs)
+  File "/usr/share/software-center/piston_get_reviews_helper.py", line 23, in try_get_reviews
+    piston_reviews = rnrclient.get_reviews(**kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/__init__.py", line 171, in wrapper
+    data = _parse_json(body)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/__init__.py", line 124, in _parse_json
+    raise APIError('No JSON object could be decoded', body=json_data)
+piston_mini_client.failhandlers.APIError: No JSON object could be decoded
+'
+2016-02-21 17:39:03,300 - softwarecenter.backend.spawn_helper - WARNING - exit code 1 from helper for '['/usr/share/software-center/piston_get_reviews_helper.py', '--language', 'uk', '--origin', 'any', '--distroseries', 'any', '--pkgname', 'skype', '--page', '1', '--sort', 'helpful']'
+2016-02-21 17:39:03,300 - softwarecenter.backend.spawn_helper - WARNING - got error from helper: 'Traceback (most recent call last):
+  File "/usr/share/software-center/piston_get_reviews_helper.py", line 79, in <module>
+    piston_reviews = try_get_reviews(kwargs)
+  File "/usr/share/software-center/piston_get_reviews_helper.py", line 23, in try_get_reviews
+    piston_reviews = rnrclient.get_reviews(**kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/__init__.py", line 171, in wrapper
+    data = _parse_json(body)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/__init__.py", line 124, in _parse_json
+    raise APIError('No JSON object could be decoded', body=json_data)
+piston_mini_client.failhandlers.APIError: No JSON object could be decoded
+'
+2016-02-21 17:49:31,140 - softwarecenter.backend.spawn_helper - WARNING - exit code 1 from helper for '['/usr/share/software-center/piston_get_reviews_helper.py', '--language', 'uk', '--origin', 'any', '--distroseries', 'any', '--pkgname', 'skype', '--page', '1', '--sort', 'helpful']'
+2016-02-21 17:49:31,140 - softwarecenter.backend.spawn_helper - WARNING - got error from helper: 'Traceback (most recent call last):
+  File "/usr/share/software-center/piston_get_reviews_helper.py", line 79, in <module>
+    piston_reviews = try_get_reviews(kwargs)
+  File "/usr/share/software-center/piston_get_reviews_helper.py", line 23, in try_get_reviews
+    piston_reviews = rnrclient.get_reviews(**kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/__init__.py", line 171, in wrapper
+    data = _parse_json(body)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/__init__.py", line 124, in _parse_json
+    raise APIError('No JSON object could be decoded', body=json_data)
+piston_mini_client.failhandlers.APIError: No JSON object could be decoded
+'
+2016-02-21 17:49:31,544 - softwarecenter.backend.spawn_helper - WARNING - exit code 1 from helper for '['/usr/share/software-center/piston_get_reviews_helper.py', '--language', 'uk', '--origin', 'any', '--distroseries', 'any', '--pkgname', 'skype', '--page', '1', '--sort', 'helpful']'
+2016-02-21 17:49:31,544 - softwarecenter.backend.spawn_helper - WARNING - got error from helper: 'Traceback (most recent call last):
+  File "/usr/share/software-center/piston_get_reviews_helper.py", line 79, in <module>
+    piston_reviews = try_get_reviews(kwargs)
+  File "/usr/share/software-center/piston_get_reviews_helper.py", line 23, in try_get_reviews
+    piston_reviews = rnrclient.get_reviews(**kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 49, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/validators.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/__init__.py", line 171, in wrapper
+    data = _parse_json(body)
+  File "/usr/lib/python2.7/dist-packages/piston_mini_client/__init__.py", line 124, in _parse_json
+    raise APIError('No JSON object could be decoded', body=json_data)
+piston_mini_client.failhandlers.APIError: No JSON object could be decoded
+'
+2016-02-24 00:06:22,081 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2016-02-24 00:06:23,572 - softwarecenter.region - WARNING - failed to use geoclue: 'org.freedesktop.Geoclue.Error.notAvailable: Geoclue master client has no usable Address providers'
+2016-02-24 00:06:24,101 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2016-02-24 00:06:24,117 - softwarecenter.plugin - INFO - activating plugin '<module 'webapps_activation' from '/usr/share/software-center/softwarecenter/plugins/webapps_activation.pyc'>'
+2016-02-24 00:06:24,282 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2016-02-24 00:06:25,474 - softwarecenter.backend.reviews - WARNING - error creating bsddb: '(22, '\xd0\x9d\xd0\xb5\xd0\xba\xd0\xbe\xd1\x80\xd0\xb5\xd0\xba\xd1\x82\xd0\xbd\xd0\xb8\xd0\xb9 \xd0\xb0\xd1\x80\xd0\xb3\xd1\x83\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82 -- BDB0054 illegal flag combination specified to DB_ENV->open')' (corrupted?)
+2016-02-24 00:06:25,475 - softwarecenter.backend.reviews - ERROR - trying to repair DB failed
+Traceback (most recent call last):
+  File "/usr/share/software-center/softwarecenter/backend/reviews/__init__.py", line 358, in _save_review_stats_cache_blocking
+    self._dump_bsddbm_for_unity(outfile, outdir)
+  File "/usr/share/software-center/softwarecenter/backend/reviews/__init__.py", line 377, in _dump_bsddbm_for_unity
+    0600)
+DBInvalidArgError: (22, '\xd0\x9d\xd0\xb5\xd0\xba\xd0\xbe\xd1\x80\xd0\xb5\xd0\xba\xd1\x82\xd0\xbd\xd0\xb8\xd0\xb9 \xd0\xb0\xd1\x80\xd0\xb3\xd1\x83\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82 -- BDB0054 illegal flag combination specified to DB_ENV->open')
+2016-02-24 00:06:30,167 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'leadwerks\r\nleadwerks-indie'' not available
+2016-02-24 00:06:33,592 - softwarecenter.backend.spawn_helper - WARNING - exit code 1 from helper for '['/usr/share/software-center/piston_generic_helper.py', '--datadir', '/usr/share/software-center/', 'SoftwareCenterRecommenderAPI', 'recommend_app', '{"pkgname": "atom"}']'
+2016-02-24 00:06:33,592 - softwarecenter.backend.spawn_helper - WARNING - got error from helper: 'WARNING:__main__:404: {'status': '404', 'content-length': '53', 'via': '1.1 papeda.canonical.com:3128 (squid/2.7.STABLE7)', 'x-cache': 'HIT from papeda.canonical.com', 'age': '87', 'strict-transport-security': 'max-age=2592000', 'server': 'Apache', 'etag': '"2b2b27d268fa0250e6cc4e4f0fe866b7"', 'cache-control': 'max-age=300', 'date': 'Tue, 23 Feb 2016 22:05:06 GMT', 'content-type': 'text/html; charset=utf-8', 'x-cache-lookup': 'HIT from papeda.canonical.com:3128'}
+'
+2016-02-24 00:06:33,592 - softwarecenter.db.categories - WARNING - Error while accessing the recommender service: WARNING:__main__:404: {'status': '404', 'content-length': '53', 'via': '1.1 papeda.canonical.com:3128 (squid/2.7.STABLE7)', 'x-cache': 'HIT from papeda.canonical.com', 'age': '87', 'strict-transport-security': 'max-age=2592000', 'server': 'Apache', 'etag': '"2b2b27d268fa0250e6cc4e4f0fe866b7"', 'cache-control': 'max-age=300', 'date': 'Tue, 23 Feb 2016 22:05:06 GMT', 'content-type': 'text/html; charset=utf-8', 'x-cache-lookup': 'HIT from papeda.canonical.com:3128'}
+
+2016-02-24 00:06:33,595 - softwarecenter.ui.gtk3.widgets.recommendations - WARNING - Error while accessing the recommender agent: WARNING:__main__:404: {'status': '404', 'content-length': '53', 'via': '1.1 papeda.canonical.com:3128 (squid/2.7.STABLE7)', 'x-cache': 'HIT from papeda.canonical.com', 'age': '87', 'strict-transport-security': 'max-age=2592000', 'server': 'Apache', 'etag': '"2b2b27d268fa0250e6cc4e4f0fe866b7"', 'cache-control': 'max-age=300', 'date': 'Tue, 23 Feb 2016 22:05:06 GMT', 'content-type': 'text/html; charset=utf-8', 'x-cache-lookup': 'HIT from papeda.canonical.com:3128'}
+
+2016-02-24 00:06:34,369 - softwarecenter.db.pkginfo_impl.aptcache - ERROR - simulate failed
+None
+2016-02-24 00:06:38,458 - softwarecenter.db.utils - INFO - software-center-agent finished with status 0
+2016-02-24 00:09:32,325 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2016-03-02 00:08:35,362 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2016-03-02 00:08:37,552 - softwarecenter.region - WARNING - failed to use geoclue: 'org.freedesktop.Geoclue.Error.notAvailable: Geoclue master client has no usable Address providers'
+2016-03-02 00:08:38,259 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2016-03-02 00:08:38,277 - softwarecenter.plugin - INFO - activating plugin '<module 'webapps_activation' from '/usr/share/software-center/softwarecenter/plugins/webapps_activation.pyc'>'
+2016-03-02 00:08:38,448 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2016-03-02 00:08:46,056 - softwarecenter.backend.reviews - WARNING - error creating bsddb: '(22, '\xd0\x9d\xd0\xb5\xd0\xba\xd0\xbe\xd1\x80\xd0\xb5\xd0\xba\xd1\x82\xd0\xbd\xd0\xb8\xd0\xb9 \xd0\xb0\xd1\x80\xd0\xb3\xd1\x83\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82 -- BDB0054 illegal flag combination specified to DB_ENV->open')' (corrupted?)
+2016-03-02 00:08:46,067 - softwarecenter.backend.reviews - ERROR - trying to repair DB failed
+Traceback (most recent call last):
+  File "/usr/share/software-center/softwarecenter/backend/reviews/__init__.py", line 358, in _save_review_stats_cache_blocking
+    self._dump_bsddbm_for_unity(outfile, outdir)
+  File "/usr/share/software-center/softwarecenter/backend/reviews/__init__.py", line 377, in _dump_bsddbm_for_unity
+    0600)
+DBInvalidArgError: (22, '\xd0\x9d\xd0\xb5\xd0\xba\xd0\xbe\xd1\x80\xd0\xb5\xd0\xba\xd1\x82\xd0\xbd\xd0\xb8\xd0\xb9 \xd0\xb0\xd1\x80\xd0\xb3\xd1\x83\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82 -- BDB0054 illegal flag combination specified to DB_ENV->open')
+2016-03-02 00:08:46,162 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'leadwerks\r\nleadwerks-indie'' not available
+2016-03-02 00:08:53,424 - softwarecenter.db.utils - INFO - software-center-agent finished with status 0
+2016-03-02 00:17:28,076 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2016-03-02 00:17:29,024 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2016-03-02 00:17:29,031 - softwarecenter.plugin - INFO - activating plugin '<module 'webapps_activation' from '/usr/share/software-center/softwarecenter/plugins/webapps_activation.pyc'>'
+2016-03-02 00:17:29,130 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2016-03-02 00:17:30,295 - softwarecenter.backend.reviews - WARNING - error creating bsddb: '(22, '\xd0\x9d\xd0\xb5\xd0\xba\xd0\xbe\xd1\x80\xd0\xb5\xd0\xba\xd1\x82\xd0\xbd\xd0\xb8\xd0\xb9 \xd0\xb0\xd1\x80\xd0\xb3\xd1\x83\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82 -- BDB0054 illegal flag combination specified to DB_ENV->open')' (corrupted?)
+2016-03-02 00:17:30,296 - softwarecenter.backend.reviews - ERROR - trying to repair DB failed
+Traceback (most recent call last):
+  File "/usr/share/software-center/softwarecenter/backend/reviews/__init__.py", line 358, in _save_review_stats_cache_blocking
+    self._dump_bsddbm_for_unity(outfile, outdir)
+  File "/usr/share/software-center/softwarecenter/backend/reviews/__init__.py", line 377, in _dump_bsddbm_for_unity
+    0600)
+DBInvalidArgError: (22, '\xd0\x9d\xd0\xb5\xd0\xba\xd0\xbe\xd1\x80\xd0\xb5\xd0\xba\xd1\x82\xd0\xbd\xd0\xb8\xd0\xb9 \xd0\xb0\xd1\x80\xd0\xb3\xd1\x83\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82 -- BDB0054 illegal flag combination specified to DB_ENV->open')
+2016-03-02 00:17:32,340 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'leadwerks\r\nleadwerks-indie'' not available
+2016-03-02 00:17:39,638 - softwarecenter.db.utils - INFO - software-center-agent finished with status 0

@@ -1,0 +1,280 @@
+{
+   "checksum": "09e5da96404efb7584fe74d29dc5c758",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13076672674665907",
+            "id": "6",
+            "meta_info": {
+               "stars.flags": "5",
+               "stars.id": "ssc_b8caa240d55d5be6",
+               "stars.version": "sync.server.Chrome43"
+            },
+            "name": "Bookmarks",
+            "type": "url",
+            "url": "chrome://bookmarks/"
+         }, {
+            "date_added": "13100541495579890",
+            "id": "7",
+            "name": "Нова вкладка",
+            "type": "url",
+            "url": "chrome://newtab/"
+         }, {
+            "date_added": "12999712339060023",
+            "id": "8",
+            "meta_info": {
+               "stars.id": "ssc_7c20b252b6032d1b",
+               "stars.imageData": "Cg5sODRqVkxrZk5iYzRNTRKJAQqAAWh0dHA6Ly93d3cuZ29vZ2xlLmNvbS51YS9sb2dvcy9kb29kbGVzLzIwMTQvcGhpbGFlLXJvYm90aWMtbGFuZGVyLWxhbmRzLW9uLWNvbWV0LTY3cGNodXJ5dW1vdmdlcmFzaW1lbmtvLTU2NjgwMDk2Mjg2NjM4MDgtaHAuZ2lmEMwDGLABGmMKW2h0dHA6Ly90My5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjUWRfLUNobzhFZERpeFRISlBQaktndnZZUFJ4bFIwMXdDcGlXLURZSGEwMk82UDI5Q04Q6wIYiwEiEAgBEOsCGIsBQgYSBIAAAAAopePZ4J/IxQI=",
+               "stars.isSynced": "true",
+               "stars.pageData": "Ig5sNDhoUXhyN0t1Q0cxTQ=="
+            },
+            "name": "Google",
+            "sync_transaction_version": "2",
+            "type": "url",
+            "url": "http://www.google.com.ua/"
+         }, {
+            "date_added": "13067810086586000",
+            "id": "9",
+            "meta_info": {
+               "stars.id": "ssc_709a60abf8e6f61b",
+               "stars.imageData": "Cg5HVEJHUDRIZzVGSTZ2TRKhAQqaAWh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9wcm94eS9JbmJ0eTZaT19wNHpDdjQ5cngtbzVMbHpTTDlOZldjM1p4MDUtV2V1UnNLOVhxUjJ6TWtadHN2UHJ0NVR3RXo1emNZdEdMVHdSTkR3WlNKVkF0blB2eG9QbzM2c0VhUkQ1cmhscWJEMT13MTIwLWgxMjAQYRhBGmEKW2h0dHA6Ly90MS5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjVGJLSWhVWmZuT2RyZVhBd0Rmdlc0MGJKQW43QzNkTFhjZk8xUnRTS2tHa2ZpZ2ZGeHkQYRhBIg4IARBhGEFCBhIEAAF4fSiLsdag6eDMAg==",
+               "stars.pageData": "Ig5wZ2ZYVWRHY29nd0N4TQ==",
+               "stars.type": "2",
+               "stars.version": "sync.server.Chrome46"
+            },
+            "name": "Вхідні",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/#inbox"
+         }, {
+            "date_added": "12999712339061023",
+            "id": "10",
+            "meta_info": {
+               "stars.id": "ssc_3e85d93f02404694",
+               "stars.version": "sync.server.Chrome45"
+            },
+            "name": "Акаунти Google",
+            "type": "url",
+            "url": "https://accounts.google.com/ServiceLogin?hl=uk&continue=http://www.google.com.ua/"
+         }, {
+            "date_added": "12999712339061023",
+            "id": "11",
+            "meta_info": {
+               "stars.id": "ssc_696abe74bbab08d2",
+               "stars.imageData": "Cg5NTUJzS1JQeGJWNGlSTRI9CjVodHRwOi8vY3M0MTM5MTcudmsubWUvdjQxMzkxNzUzMS84NzI1LzVqQUJjN2VJNVZnLmpwZxCgARigARpjCltodHRwOi8vdDAuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1FQMEZjMDdtZFIwNFkya2tfTzFGQTF0aUdDMk9hR2VxbHk3NXFBOVNUemZ3RVRhM0o0EKABGKABIh8IARCgARigASCVJUIGEgSiCnn/SgppbWFnZS9qcGVn",
+               "stars.isSynced": "true",
+               "stars.pageData": "Ig52TjMtdXkzRExjSkNaTQ==",
+               "stars.type": "2"
+            },
+            "name": "Христина Литвин",
+            "type": "url",
+            "url": "http://vkontakte.ru/id23316531"
+         }, {
+            "date_added": "12999712339061023",
+            "id": "12",
+            "meta_info": {
+               "stars.flags": "6",
+               "stars.id": "ssc_1d45a6193e4f436d",
+               "stars.imageData": "Cg5sODRqVkxrZk5iYzRNTRKFAQp9aHR0cDovL3d3dy5nb29nbGUuY29tL2xvZ29zL2Rvb2RsZXMvMjAxNC9waGlsYWUtcm9ib3RpYy1sYW5kZXItbGFuZHMtb24tY29tZXQtNjdwY2h1cnl1bW92Z2VyYXNpbWVua28tNTY2ODAwOTYyODY2MzgwOC1ocC5naWYQzAMYsAEaYwpbaHR0cDovL3QzLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NRZF8tQ2hvOEVkRGl4VEhKUFBqS2d2dllQUnhsUjAxd0NwaVctRFlIYTAyTzZQMjlDThDrAhiLASIQCAEQ6wIYiwFCBhIEgAAAACiL3+ar6cHFAg==",
+               "stars.isSynced": "true",
+               "stars.pageData": "Ig56aG9vbDhkeEJWNGtvTQ=="
+            },
+            "name": "",
+            "type": "url",
+            "url": "http://www.google.com/"
+         }, {
+            "date_added": "13098370495555625",
+            "id": "13",
+            "name": "",
+            "type": "url",
+            "url": "http://www.radiosvoboda.org/shemy.html"
+         }, {
+            "date_added": "12995193081557000",
+            "id": "14",
+            "meta_info": {
+               "stars.id": "ssc_dcd2132272a9d063",
+               "stars.pageData": "Ig5zdzR3SHNVblNaSVBwTQ==",
+               "stars.type": "2",
+               "stars.version": "sync.server.Chrome45"
+            },
+            "name": "Розклад",
+            "type": "url",
+            "url": "http://planeta-kino.com.ua/lvov/ua/showtimes/"
+         }, {
+            "date_added": "12999712339061023",
+            "id": "15",
+            "meta_info": {
+               "stars.id": "ssc_9476805dc0d0b632",
+               "stars.version": "sync.server.Chrome46"
+            },
+            "name": "Мальви фото - Пошук Google",
+            "type": "url",
+            "url": "http://www.google.com.ua/search?q=%D0%9C%D0%B0%D0%BB%D1%8C%D0%B2%D0%B8+%D1%84%D0%BE%D1%82%D0%BE&hl=uk&biw=1280&bih=923&prmd=imvns&tbm=isch&tbo=u&source=univ&sa=X&ei=49q2TumfCcmM4gTwl5mBBA&ved=0CCAQsAQ"
+         }, {
+            "date_added": "13068217504032000",
+            "id": "16",
+            "meta_info": {
+               "stars.id": "ssc_1f357217cd689a02",
+               "stars.imageData": "Cg40VTdJX3YweDVJWXdCTRLIAQq/AWh0dHA6Ly9tdDAuZ29vZ2xlYXBpcy5jb20vdnQ/cGI9ITFtNCExbTMhMWk1ITJpMTghM2kxMCEybTMhMWUwITJzbSEzaTI5MjAwMDAwMCEzbTE0ITJzdWshM3NVQSE1ZTE4ITEybTEhMWU0NyExMm0zITFlMzchMm0xITFzc21hcnRtYXBzITEybTQhMWUyNiEybTIhMXNzdHlsZXMhMnpjeTUwT2pNemZITXVaVHBzZkhBdWRqcHZabVkhNGUwEMwBGMwBGmMKW2h0dHA6Ly90MS5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjU2trTU5PNE9OUUpHbWFQc1ZRM2puSjVNZzdTVHdScnBIMm1rUndsd1RpcjRYaUxDZnkQzAEYzAEiHwgBEMwBGMwBIIg1QgYSBIACAP9KCmltYWdlL2pwZWc=",
+               "stars.pageData": "EmXQnNCw0YDRiNGA0YPRgiDQlNCw0L3RliDQvNCw0L/QuCDQl9Cw0L/RgNC+0L/QvtC90YPQstCw0YLQuCDQv9C+0ZfQt9C00LrRgyAo0Y/QutGJ0L4g0LLQuCDQstC+0LTRltC5KSIOYlBTRm5JMUxBYTFsak0=",
+               "stars.type": "2",
+               "stars.version": "sync.server.Chrome45"
+            },
+            "name": "Запропонувати поїздку",
+            "type": "url",
+            "url": "http://www.blablacar.com.ua/mists"
+         }, {
+            "date_added": "13014237344188250",
+            "id": "17",
+            "name": "Доппельгерц Энерготоник :: Инструкция :: Описание препарата",
+            "type": "url",
+            "url": "http://www.piluli.kharkov.ua/drugs/drug/doppelherz-energietonikum/"
+         }, {
+            "date_added": "13014931670772750",
+            "id": "18",
+            "name": "McNeill шкільні сумки встановлює ErgoLight 912 6 шт. - Чемодан-direkt.de",
+            "type": "url",
+            "url": "http://www.koffer-direkt.de/mcneill-schultaschen-sets-ergo-light-912-din-6-tlg.html/?campaign=billiger_de"
+         }, {
+            "date_added": "13058485876162000",
+            "id": "19",
+            "meta_info": {
+               "stars.id": "ssc_04d191ad0781e69b",
+               "stars.isSynced": "true",
+               "stars.pageData": "Ig5PNllGWUlwdkxhZVpETQ==",
+               "stars.type": "2"
+            },
+            "name": "Шахта",
+            "sync_transaction_version": "3",
+            "type": "url",
+            "url": "http://kleinanzeigen.ebay.de/anzeigen/m-meine-anzeigen.html"
+         }, {
+            "date_added": "13017762696434125",
+            "id": "20",
+            "name": "Класний варіант - glvolodia@gmail.com - Gmail",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/#inbox/13fbd035be598a24"
+         }, {
+            "date_added": "13027258655511011",
+            "id": "21",
+            "name": "облож",
+            "type": "url",
+            "url": "http://fotovideomaster.com/forum.php?s=f11f58b9fddf787bb72c7dfbb9dbe297"
+         }, {
+            "date_added": "13040306052083260",
+            "id": "22",
+            "name": "Яндекс",
+            "type": "url",
+            "url": "http://www.yandex.ru/?win=117&clid=2052595"
+         }, {
+            "date_added": "13040306052083260",
+            "id": "23",
+            "name": "Почта",
+            "type": "url",
+            "url": "http://mail.yandex.ru/?win=117&clid=2052595"
+         }, {
+            "date_added": "13053433480116725",
+            "id": "24",
+            "meta_info": {
+               "stars.id": "ssc_e23e3367a14f8f4c",
+               "stars.version": "sync.server.Chrome42"
+            },
+            "name": "Mail.Ru",
+            "type": "url",
+            "url": "http://mail.ru/cnt/7993"
+         }, {
+            "date_added": "13053433480116725",
+            "id": "25",
+            "name": "Поиск в Интернете",
+            "type": "url",
+            "url": "http://go.mail.ru/?chrome=1"
+         }, {
+            "date_added": "13059699662075762",
+            "id": "26",
+            "meta_info": {
+               "stars.id": "ssc_41f6da4b1817834e",
+               "stars.imageData": "Cg50azFCc2NNS2RFOUF1TRJwCmhodHRwczovL2xoNC5nb29nbGV1c2VyY29udGVudC5jb20vLWxuQWM4ZlBfa0tvL1VmWGlwT3BXcUNJL0FBQUFBQUFBVDhBL081VS05OTRVYXhJL3cxMjAtaDEyMC9Qcm9jZXNzLmpwZxC4ARiRAhphCltodHRwOi8vdDIuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1JmVEtpVUlxMW5fWlp3S0ladHk5ZjZPZ0VBZHBfdk5NQTlGaS1LQUpKX0FpZjkzTTQtEEEYYSIOCAEQQRhhQgYSBIAAAAAo/O6MgtW7zAI=",
+               "stars.pageData": "Ig5wZ2ZYVWRHY29nd0N4TQ==",
+               "stars.type": "2",
+               "stars.version": "sync.server.Chrome46"
+            },
+            "name": "Входящие - glvolodia@gmail.com - Gmail",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/#inbox"
+         }, {
+            "date_added": "13092833813072262",
+            "id": "27",
+            "meta_info": {
+               "stars.flags": "5",
+               "stars.id": "ssc_d16b179f80a97556",
+               "stars.version": "sync.server.Chrome46"
+            },
+            "name": "bl.ocks.org - mbostock",
+            "type": "url",
+            "url": "http://bl.ocks.org/mbostock"
+         }, {
+            "date_added": "13092836535392681",
+            "id": "28",
+            "meta_info": {
+               "stars.flags": "5",
+               "stars.id": "ssc_57e93e6b40a66177",
+               "stars.version": "sync.server.Chrome46"
+            },
+            "name": "Испытание: таблица посложнее — Знакомство с таблицами — Курсы — HTML Academy",
+            "type": "url",
+            "url": "https://htmlacademy.ru/courses/39/run/17"
+         }, {
+            "date_added": "13092836543783681",
+            "id": "29",
+            "name": "Assignment",
+            "type": "url",
+            "url": "https://my-learning.center/mod/assign/view.php?id=543"
+         }, {
+            "date_added": "13092836558160681",
+            "id": "30",
+            "meta_info": {
+               "stars.flags": "5",
+               "stars.id": "ssc_db19877fb9d09359",
+               "stars.version": "sync.server.Chrome46"
+            },
+            "name": "Введение в HTML | htmlbook.ru",
+            "type": "url",
+            "url": "http://htmlbook.ru/samhtml/vvedenie-v-html"
+         }, {
+            "date_added": "13093188428627319",
+            "id": "31",
+            "name": "Create a new fiddle - JSFiddle",
+            "type": "url",
+            "url": "https://jsfiddle.net/"
+         }, {
+            "date_added": "13100308094625543",
+            "id": "32",
+            "name": "оло",
+            "type": "url",
+            "url": "http://rabota.ua/company43767/vacancy6030145?mode=apply#apply"
+         } ],
+         "date_added": "13100541471532139",
+         "date_modified": "13101298114433905",
+         "id": "1",
+         "name": "Панель закладок",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13100541471532157",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Інші закладки",
+         "type": "folder"
+      },
+      "sync_transaction_version": "3",
+      "synced": {
+         "children": [  ],
+         "date_added": "13100541471532160",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Закладки для мобільних пристроїв",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

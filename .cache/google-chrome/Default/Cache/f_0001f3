@@ -1,0 +1,508 @@
+<html>
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+
+<title>Git для чайников: устанавливаем Git. "Все о Hi-Tech"</title>
+
+<meta name="Description" content="В этой статье я попытаюсь максимально просто, на примерах, описать работу с системой контроля версий Git, чтобы начинающие разработчики могли приобщиться к этому прекрасному инструменту. Установка Git">
+
+<meta name="keywords" content="Система контроля версий, Git, SmartGit, репозиторий, коммит"> 
+
+<link rel="icon" href="/favicon.bmp" type="image/x-icon">
+
+<style type="text/css" media="screen"> @import url("/sys/menuh.css"); </style>
+<!--[if lt IE 7]>
+<style type="text/css" media="screen">
+#menuh{float:none;}
+body{behavior:url(csshover.htc); font-size:100%;}
+#menuh ul li{float:left; width: 100%;}
+#menuh a{height:1%;font:bold 0.7em/1.4em arial, sans-serif;}
+</style>
+<![endif]-->
+</head>
+
+<table align = "center" Width="97%" cellspacing="0"cellpadding="0" border="2">
+<tr>
+<td>
+<!-- ===================================== Шапка сайта ================================== -->
+<table cellspacing="0" cellpadding="0" height = "110" Width="100%">
+<td background = "/sys/t2.gif" Width="180">
+	<p align = "center">
+	<a href="/about.html"><img align = "center" src="/sys/hit.gif" style= "padding: 0 10 0 10;"></a>
+	</p>
+</td>
+<td background = "/sys/t2.gif"> 
+	<!--Реклама Button--> 
+	<div align="center" style= "padding: 5 20 5 0;" >
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Button -->
+	<ins class="adsbygoogle"
+		style="display:inline-block;width:728px;height:90px"
+		data-ad-client="ca-pub-7858999051663124"
+		data-ad-slot="6297702095"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	</div>
+</td>
+</table>
+
+<!-- ============================== Основное меню ================================ -->
+<table align = "center" Width="100%" height="38pt" cellspacing="0"cellpadding="0" border="0" >
+<tr>
+<td background = "/sys/t2.gif" Width="8pt" style='min-width:8pt;'>  </td>
+<td background = "/sys/4.gif"  valign=top > 
+
+<table cellspacing="0" cellpadding="0" Width="100%" style='min-width:735pt;'>
+<td>
+<div id="menuh-container">
+<div id="menuh">
+	<ul>	
+		<li><a href="/index.html" class="top_parent">Главная</a></li>
+	</ul>
+	<ul>
+		<li><a  href="#" class="top_parent">История&nbsp;&nbsp;<small>&#9660;</small></a>
+		<ul>
+			<li><a href="#" class="parent">Домеханический этап&nbsp;&nbsp;&nbsp;&nbsp;<small>&#9658;</small></a>
+				<ul>
+				<li><a href="/inf/history/p_0_0.html">Зарождение счета</a></li>
+				<li><a href="/inf/history/p_0_1.html">Бирки</a></li>
+				<li><a href="/inf/history/p_0_2.html">Китайские счетные палочки</a></li>
+				<li><a href="/inf/history/p_0_3.html">Узелковая письменность</a></li>
+				<li><a href="/inf/history/p_0_4.html">Абак</a></li>
+				<li><a href="/inf/history/p_0_5.html">Китайская счетная доска</a></li>
+				<li><a href="/inf/history/p_0_6.html">Суаньпань</a></li>
+				<li><a href="/inf/history/p_0_7.html">Соробан</a></li>
+				<li><a href="/inf/history/p_0_8.html">Счет на линиях</a></li>
+				<li><a href="/inf/history/p_0_9.html">Счет костьми</a></li>
+				<li><a href="/inf/history/p_0_10.html">Дощаный счет</a></li>
+				<li><a href="/inf/history/p_0_11.html">Счеты</a></li>
+				<li><a href="/inf/history/p_0_12.html">Палочки Непера</a></li>
+				<li><a href="/inf/history/p_0_14.html">Логарифмы</a></li>
+				<li><a href="/inf/history/p_0_15.html">Логарифмическая линейка</a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="parent">Механический этап&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>&#9658;</small></a>
+				<ul>
+				<li><a href="/inf/history/p_1_0.html">Счетная машина Леонардо</a></li>
+				<li><a href="/inf/history/p_1_1.html">Вычисляющие часы</a></li>
+				<li><a href="/inf/history/p_1_3.html">Паскалин</a></li>
+				<li><a href="/inf/history/p_1_6.html">Счетная машина Морленда</a></li>
+				<li><a href="/inf/history/p_1_7.html">Калькулятор Лейбница</a></li>
+				<li><a href="/inf/history/p_1_9.html">Рабдологический абак</a></li>
+				<li><a href="/inf/history/p_1_10.html">Арифмометр Полени</a></li>
+				<li><a href="/inf/history/p_1_12.html">Машина Перейры</a></li>
+				<li><a href="/inf/history/p_1_13.html">Счетная машина Якобсона</a></li>
+				</ul>
+			</li>
+			<li><a href="/inf/history/p_3_0.html">Первое поколение ЭВМ</a></li>	
+			<li><a href="/inf/history/p_4_0.html">Второе поколение ЭВМ</a></li>		
+			<li><a href="/inf/history/p_5_0.html">Третье поколение ЭВМ</a></li>	
+			<li><a href="/inf/history/pc.html">Персональные ЭВМ</a></li>
+		</ul>
+		</li>
+	</ul>
+	<ul>	
+		<li><a href="#" class="top_parent">Устройство ПК&nbsp;<small>&#9660;</small></a>
+		<ul>
+			<li><a href="/inf/pc/mp_struct.html" class="parent">Материнская плата</a></li>
+			<li><a href="#" class="parent">Процессор&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>&#9658;</small></a>
+			<ul>
+				<li><a href="/inf/pc/cp_struct.html">Устройство процессора</a></li>
+				<li><a href="/inf/pc/proc_intel_hrono_d_1971-1979.html">Хронология ЦП Intel</a></li>
+			</ul>
+			</li>
+			<li><a href="#" class="parent">Оперативная память&nbsp;<small>&#9658;</small></a>
+			<ul>
+				<li><a href="/inf/pc/mem_ozu.html">Типы ОЗУ</a></li>
+				<li><a href="/inf/pc/mem_dram.html">Динамическая оперативная память</a></li>
+				<li><a href="/inf/pc/mem_sram.html">Статическая оперативная память</a></li>
+				<li><a href="/inf/pc/mem_mram.html">Магниторезистивная оперативная память</a></li>
+			</ul>
+			</li>
+			<li><a href="/inf/pc/mem_pzu.html" class="parent">Постоянная память</a></li>
+			<li><a href="/inf/pc/monit_crt_hist.html" class="parent">Периферия</a></li>
+		</ul>
+		</li>
+	</ul>
+	<ul>	
+		<li><a href="#" class="top_parent">ВС и Сети&nbsp;&nbsp;<small>&#9660;</small></a>
+		<ul>
+		<li><a href="#" class="parent">Надежность ВС&nbsp;&nbsp;&nbsp;<small>&#9658;</small></a>
+		<ul>
+			<li><a href="/inf/systems/p_0_1.html">Надежность</a></li>
+			<li><a href="/inf/systems/p_0_4.html">Повышение надежности</a></li>
+			<li><a href="/inf/systems/p_0_5.html">Резервирование оборудования</a></li>
+			<li><a href="/inf/systems/p_0_7.html">Контроль исправности</a></li>
+			<li><a href="/inf/systems/p_0_8.html">Высоконадежные ВС</a></li>
+			<li><a href="/inf/systems/p_0_10.html">Программное резервирование</a></li>
+			<li><a href="/inf/systems/p_0_11.html">Избыточное кодирование</a></li>
+			<li><a href="/inf/systems/p_0_13.html">Контрольная сумма CRC</a></li>
+			<li><a href="/inf/systems/p_0_14.html">Коды Хемминга</a></li>
+		</ul>
+		</li>
+		<li><a href="/inf/systems/p_1_1.html" class="parent">Бортовые ВС</a></li>
+		<li><a href="/inf/systems/net_wireless_overview.html" class="parent">Сети</a></li>
+		</ul>
+		</li>
+	</ul>
+	<ul>	
+		<li><a href="#" class="top_parent">Разработка ПО&nbsp;<small>&#9660;</small></a>
+		<ul>
+		<li><a href="#" class="parent">Системы контроля версий&nbsp;<small>&#9658;</small></a>
+		<ul>
+			<li><a href="/inf/prog/p_0_0.html">Введение в СКВ</a></li>
+			<li><a href="/inf/prog/p_0_1.html">Обзор СКВ</a></li>
+			<li><a href="/inf/prog/git_001.html">Начинаем работать с СКВ GIT</a></li>
+		</ul>
+		</li>
+		<li><a href="#" class="parent">Виртуальные ЭВМ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>&#9658;</small></a>
+		<ul>
+			<li><a href="/inf/vpc/p_0_0.html">Виртуальные машины</a></li>
+			<li><a href="/inf/vpc/p_0_1.html">Технология виртуализации</a></li>
+			<li><a href="/inf/vpc/p_0_2.html">Начинаем работать с VMware</a></li>
+<li><a href="/inf/vpc/VirtualBox.html">Начинаем работать с VirtualBox</a></li>		
+		</ul>
+		</li>
+		<li><a href="/inf/prog/c/func/abort.html" class="parent">Язык Си</a></li>
+		</ul>
+		</li>
+	</ul>
+	<ul>	
+		<li><a href="#" class="top_parent">Полезное&nbsp;<small>&#9660;</small></a>
+		<ul>
+		<li><a href="/useful/prog/free_prog.html" class="parent">Бесплатное ПО первой необходимости</a></li>
+		<li><a href="/useful/wallpapers/abstraction/p_001.html" class="parent">Заставки на рабочий стол&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>&#9658;</small></a>
+		<ul>
+		<li><a href="/useful/wallpapers/abstraction/p_001.html">Абстракция</a></li>
+		<li><a href="/useful/wallpapers/architecture/p_001.html">Архитектура</a></li>
+		<li><a href="/useful/wallpapers/nature/p_001.html">Природа</a></li>
+		<ul>
+		</li>
+		</ul>
+		</li>
+	</ul>
+</div> 	<!-- end the menuh-container div -->  
+</div>	<!-- end the menuh div --> 
+
+</td>
+
+<td Width="248" align="right">
+<div id="menuh-container">
+<div id="menuh">
+	<ul>	
+		<li><a href="/search.html" class="top_parent">Поиск</a></li>
+	</ul>
+	<ul>	
+		<li><a href="/content.html" class="top_parent">Содержание</a></li>
+	</ul>
+</div> 	<!-- end the menuh-container div -->  
+</div>	<!-- end the menuh div --> 
+
+</td>
+</table>
+
+</td>
+<td background = "/sys/t2.gif" valign=top Width="10pt" style='min-width:8pt;'>  </td>
+</tr>
+</table>
+
+<!-- ============================== Хлебные крошки =============================== -->
+<table align = "center" Width="100%" Height=18pt cellspacing="0"cellpadding="0" border="0" >
+<tr>
+<td background = "/sys/t2.gif" Width="8pt" style='min-width:8pt;'>  </td>
+<td background = "/sys/t2.gif"  valign=top > 
+<small>
+<i>
+&nbsp;&nbsp;
+<a href="/index.html" style="text-decoration: none; color: black;">Главная</a>
+&nbsp;<small>&#9658;</small>&nbsp;
+<a href="/inf/prog/index.html" style="text-decoration: none; color: black;">Разработка&nbsp;ПО</a>
+&nbsp;<small>&#9658;</small>&nbsp;
+<a href="#" style="text-decoration: none; color: black;">Системы&nbsp;контроля&nbsp;версий:&nbsp;начинаем&nbsp;работать&nbsp;с&nbsp;GIT</a>
+</i></small>
+</td>
+<td background = "/sys/t2.gif" valign=top Width="10pt" style='min-width:8pt;'></td>
+</tr>
+</table>
+
+<!-- ========================== основной текст статьи =========================== -->
+<table align = "center" Width="100%" cellspacing="0"cellpadding="0" border="0" >
+<tr>
+<td background = "/sys/t2.gif" Width="8pt" style='min-width:8pt;'>  </td>
+<td background = "/sys/4.gif"  valign=top > 
+
+<!-- Реклама: начало -->
+<table width = 190 border=0 align=left style="text-align: center; border-spacing:7px 0px;">
+<tr height = 7><td> </td></tr>
+<tr height = 620 align=left background = "/sys/t2.gif"><td>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<ins class="adsbygoogle"
+		style="display:inline-block;width:160px;height:600px"
+		data-ad-client="ca-pub-7858999051663124"
+		data-ad-slot="2342167296"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</td></tr>
+<tr height = 7><td> </td></tr>
+</table>
+<!-- Реклама: конец -->
+
+
+<H1 align=center>Начинаем работать с системой контроля версий GIT (для чайников)</H1>
+
+<p align = "center">
+<b>(Часть 1. Устанавливаем Git)</b>
+</p>
+
+<p align = "justify" style='margin-right:10pt;margin-left:10pt;'>
+Система контроля версий – неотъемлемая часть любого мало-мальски серьезного проекта по разработке программного обеспечения и не только. Даже если вы только начинаете делать первые шаги в разработке программного обеспечения, неплохо параллельно с освоением языка программирования осваивать и культуру программирования, в том числе и правильную организацию процесса разработки программного обеспечения, неотъемлемой частью которой является использование системы контроля версий. И не сомневайтесь, как только вы освоите азы работы с системой контроля версий, то поймете насколько это простой, удобный и полезный механизм и с содроганием будете вспоминать ваши мучения по сопровождению нескольких веток развития Вашего программного обеспечения.
+</p>
+
+<p align = "justify" style='margin-right:10pt;margin-left:10pt;'>
+В интернете очень много ресурсов подробно описывающих возможности систем контроля версий и способы работы с ним, но подавляющее большинство статей подойдут искушенным пользователям систем контроля версий для решения сложных задач и оптимизации работы с системой контроля версий. Я же попытаюсь максимально просто, на примерах описать работу с системами контроля версий, чтобы начинающие разработчики могли приобщиться к этому прекрасному инструменту.
+</p>
+
+<p align = "justify" style='margin-right:10pt;margin-left:10pt;'>
+В качестве системы контроля версий  я выбрал Git, одну из самых мощных и удобных систем контроля версий. А в качестве операционной системы для разработки программного обеспечения и создания системы контроля версий - ubuntu-12.04.
+</p>
+
+<p align = "justify" style='margin-right:10pt;margin-left:10pt;'>
+<a href="git_001.html#1">1. Устанавливаем Git.</a><br>          
+<a href="git_002.html#2">2. Создаем репозиторий Git.</a><br>
+<a href="git_003.html#3">3. Устанавливаем SmartGit для работы с репзиторием.</a><br>
+<a href="git_004.html#4">4. Основы Работа с репозиторием Git.</a><br>
+<a style="margin-left:15pt" href="git_004.html#4.1">4.1. Создаем проект для работы с репозиторием.</a><br>
+<a style="margin-left:15pt" href="git_006.html#4.2">4.2. Добавляем первый файл в локальный репозиторий.</a><br>
+<a style="margin-left:15pt" href="git_007.html#4.3">4.3. Вносим изменение в локальный репозиторий.</a><br>
+<a style="margin-left:30pt" href="git_007.html#4.3.1">4.3.1. Добавляем строки в файл.</a><br>
+<a style="margin-left:30pt" href="git_009.html#4.3.2">4.3.2. Изменяем строки в файле.</a><br>
+<a style="margin-left:30pt" href="git_010.html#4.3.3">4.3.3. Удаляем строки из файла.</a><br>
+<a style="margin-left:30pt" href="git_011.html#4.3.4">4.3.4. Отменяем изменения до загрузки в локальный репозиторий.</a><br>
+<a style="margin-left:30pt" href="git_012.html#4.3.5">4.3.5. Добавляем новые файлы в репозиторий.</a><br>
+<a style="margin-left:30pt" href="git_013.html#4.3.6">4.3.6. Удаляем файл из репозитория.</a><br>
+<a style="margin-left:30pt" href="git_014.html#4.3.7">4.3.7. Просматриваем историю изменений репозитория.</a><br>
+<a style="margin-left:30pt" href="git_015.html#4.3.8">4.3.8. Изменяем комментарий коммита.</a><br>
+<a style="margin-left:30pt" href="git_016.html#4.3.9">4.3.9. Отменяем последний коммит.</a><br>
+<a style="margin-left:30pt" href="git_017.html#4.3.10">4.3.10. Создаем новую ветку.</a><br>
+<a style="margin-left:45pt" href="git_017.html#4.3.10.1">4.3.10.1. Новая ветка относительно последнего коммита.</a><br>
+<a style="margin-left:45pt" href="git_017.html#4.3.10.2">4.3.10.2. Новая ветка относительно выбранного коммита.</a><br>
+<a style="margin-left:30pt" href="git_018.html#4.3.11">4.3.11. Удаляем ветку.</a><br>
+<a style="margin-left:30pt" href="git_019.html#4.3.12">4.3.12. Объединяем ветки.</a><br>
+<a style="margin-left:30pt" href="git_020.html#4.3.13">4.3.13. Конфликты и их разрешение.</a><br>
+<a style="margin-left:30pt" href="git_021.html#4.3.14">4.3.14. Добавляем выбранный коммит из одной ветки в другую.</a><br>
+<a style="margin-left:30pt" href="git_022.html#4.3.15">4.3.15. Rebase или как упростить историю коммитов.</a><br>
+<a style="margin-left:15pt" href="git_023.html#4.4">4.4. Работа с удаленным репозиторием.</a><br>
+<a style="margin-left:30pt" href="git_023.html#4.4.1">4.4.1. Настраиваем связь между сервером и клиентом по SSH.</a><br>
+<a style="margin-left:30pt" href="git_024.html#4.4.2">4.4.2. Клонируем репозиторий с ЭВМ-сервера на ЭВМ-клиент.</a><br>
+<a style="margin-left:30pt" href="git_025.html#4.4.3">4.4.3. Основы работы с удаленным репозиторием.</a><br>
+<a href="git_026.html#5">5. Заключение.</a><br>
+</p>
+
+<br>
+<a name="1">
+<H2 align=center>1. Устанавливаем Git.</H2>
+
+<p align = "justify" style='margin-right:10pt;margin-left:10pt;'>
+Раз вы читаете эту статью, то будем считать, что интернет у Вас есть, по этому, воспользуемся самым простым способом установки системы контроля версий - установим ее напрямую из репозитория в интернете.
+</p>
+
+<p align = "justify" style='margin-right:30pt;margin-left:30pt;'><i>
+<b>Репозиторий</b> -  место, в котором хранятся данные/программы. Большинство операционных систем семейства Linux имеют официальные репозитории, в которых хранится огромное количество полезного и актуального программного обеспечения. По умолчанию при установки Ubuntu прописывается несколько официальных репозиториев, список которых, при желании, можно расширить, но для нашей задачи вполне достаточно репозиториев по умолчанию.
+</p></i>
+
+<p align = "justify" style='margin-right:10pt;margin-left:10pt;'>
+И так, приступим, и первое что необходимо сделать - это обновить локальный список доступных приложений на удаленных репозиториях. Если вы до этого не обновляли локальный список, то требуемого приложения (git-core) может не оказаться в этом списке, в результате при попытке установки git будет выдана ошибка – требуемые пакеты не найдены. Для обновления локального списка наберите в консоле:
+</p>
+
+<p align = "center" style='margin-right:10pt;margin-left:10pt;'>
+<b>sudo apt-get update</b>
+</p>
+
+<p align = "justify" style='margin-right:30pt;margin-left:30pt;'><i>
+<b>apt</b> — консольная программа для установки/обновления/удаления пакетов из репозитория в операционной системе Ubuntu.
+</p></i>
+
+<p align = "justify" style='margin-right:30pt;margin-left:30pt;'><i>
+<b>sudo</b> -  позволяет запустить команду от имени суперпользователя (root) или другого пользователья, определенного в файле sudoers. Команда sudo требует чтобы пользователь, аутентифицировал себя. 
+</p></i>
+
+<p align = "justify" style='margin-right:10pt;margin-left:10pt;'>
+Использование команды sudo требуется, так как по умолчанию в Ubuntu разрешена установка/удаление приложений только от имени суперпользователя. По умолчанию в Ubuntu суперпользователем считается первый создаваемый (создаваемый при установке ОС) пользователь.
+</p>
+
+<p align = "justify" style='margin-right:10pt;margin-left:10pt;'>
+После ввода команды 'sudo apt-get update' будет затребована аутентификация:
+</p>
+
+<p align = "justify" style='margin-right:10pt;margin-left:60pt;'>
+poisov@ubuntu:~/Desktop$  sudo apt-get update<br>
+[sudo] password for poisov:
+</p>
+
+<p align = "justify" style='margin-right:10pt;margin-left:10pt;'>
+Введите пароль, указанный при создании первого пользователя, после чего начнется обновление локального списка пакетов. Это может занять несколько минут, при  этом в консоле будет отображаться процесс обновления локального списка.
+</p>
+
+<p align = "justify" style='margin-right:10pt;margin-left:10pt;'>
+После обновления локального списка доступных приложений можно приступить непосредственно к скачиванию и установки системы контроля версий git, для чего в консоле надо набрать команду:
+</p>
+
+<p align = "center" style='margin-right:10pt;margin-left:10pt;'>
+<b>sudo apt-get install git-core</b>
+</p>
+
+
+<p align = "justify" style='margin-right:10pt;margin-left:10pt;'>
+После ввода команды будет затребована аутентификация:
+</p>
+
+<p align = "justify" style='margin-right:10pt;margin-left:60pt;'>
+poisov@ubuntu:~/Desktop$  sudo apt-get install git-core<br>
+[sudo] password for poisov:
+</p>
+
+<p align = "justify" style='margin-right:10pt;margin-left:10pt;'>
+После ввода пароля будет произведен поиск требуемых пакетов, определены зависимости и возможность установки приложения, после чего будет запрошено подтверждение на установку приложения (рис.1).
+</p>
+
+<p align = "center">
+    <img src="img/git_001.gif" align = "center" hspace=12  width=441 height=218 alt="Начало установки git.">  
+</p>
+
+<p align = "justify" style='margin-right:10pt;margin-left:10pt;'>
+Соглашаемся на установку и наблюдаем процесс инсталляции системы контроля версий, который может занять несколько минут (рис. 2).
+</p>
+
+<p align = "center">
+    <img src="img/git_002.gif" align = "center" hspace=12  width=441 height=382 alt="Завершение установки git.">  
+</p>
+
+<p align = "justify" style='margin-right:10pt;margin-left:10pt;'>
+На этом установка git закончена и мы можем перейти к созданию репозитория.
+</p>
+
+<br clear="all">
+<p align = "center">
+<a href="git_001.html#1"><<< Предыдущий раздел<a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="git_002.html#2">Следующий раздел >>><a>
+</p>
+
+<!-- ============================== Поделиться ================================ -->
+<br clear="all">
+<p align = "center">
+  <!-- Поместите этот тег туда, где должна отображаться кнопка +1. -->
+  <g:plusone size="tall"></g:plusone>
+  <!-- Поместите этот вызов функции отображения в соответствующее место. -->
+  <script type="text/javascript">
+    window.___gcfg = {lang: 'ru'};
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+</p>
+
+<script align = "center" type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+<p align = "center" class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="icon" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir,gplus"></p>
+</p>
+
+</td>
+
+<td background = "/sys/t2.gif" valign=top Width="10">  </td>
+</tr>
+</table>
+
+<table align = "center" Width="100%" height = "42" cellspacing="0"cellpadding="0" >
+  <tr>
+  <td background = "/sys/t2.gif">
+<p align = "center" style=' margin-top:6;'>
+
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24999950&amp;from=informer"
+target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/24999950/3_0_E0E0E0FF_C0C0C0FF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:24999950,lang:'ru'});return false}catch(e){}"/></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter24999950 = new Ya.Metrika({id:24999950,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/24999950" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- HotLog -->
+<span id="hotlog_counter"></span>
+<script type="text/javascript">
+var hotlog_counter_id = 602565;
+var hotlog_hit = 30;
+var hotlog_counter_type = 357;
+</script>
+<script src="http://js.hotlog.ru/counter.js" type="text/javascript" async="true"></script>
+<noscript>
+<a href="http://click.hotlog.ru/?602565" target="_blank"><img
+src="http://hit30.hotlog.ru/cgi-bin/hotlog/count?s=602565&amp;im=357" border="0"
+alt="HotLog"></a>
+</noscript>
+<!-- /HotLog -->
+
+<!-- begin of Top100 code -->
+<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?2657606"></script>
+<noscript>
+<a href="http://top100.rambler.ru/navi/2657606/">
+<img src="http://counter.rambler.ru/top100.cnt?2657606" alt="Rambler's Top100" border="0" />
+</a>
+</noscript>
+<!-- end of Top100 code -->
+
+<!-- Rating@Mail.ru counter -->
+<script type="text/javascript">//<![CDATA[
+var _tmr = _tmr || [];
+_tmr.push({id: "2164798", type: "pageView", start: (new Date()).getTime()});
+(function (d, w) {
+   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true;
+   ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window);
+//]]></script><noscript><div style="position:absolute;left:-10000px;">
+<img src="//top-fwz1.mail.ru/counter?id=2164798;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
+</div></noscript>
+<!-- //Rating@Mail.ru counter -->
+<!-- Rating@Mail.ru logo -->
+<a href="http://top.mail.ru/jump?from=2164798">
+<img src="//top-fwz1.mail.ru/counter?id=2164798;t=441;l=1" 
+style="border:0;" height="31" width="88" alt="Рейтинг@Mail.ru" /></a>
+<!-- //Rating@Mail.ru logo -->
+
+</p>
+</td></tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</html>

@@ -1,0 +1,14 @@
+status: 200
+content-length: 2
+expires: Tue, 23 Feb 2016 22:12:12 GMT
+content-location: https://reviews.ubuntu.com/reviews/api/1.0/reviews/filter/uk/any/any/any/atom/page/1/helpful/
+strict-transport-security: max-age=15768000; includeSubDomains; preload
+vary: Accept
+server: gunicorn/19.3.0
+last-modified: Tue, 23 Feb 2016 22:07:12 GMT
+x-bzr-revision-number: 313
+cache-control: max-age=300
+date: Tue, 23 Feb 2016 22:07:12 GMT
+content-type: application/json; charset=utf-8
+
+[]

@@ -1,0 +1,72 @@
+status: 200
+content-length: 2269
+expires: Sun, 21 Feb 2016 15:54:37 GMT
+content-location: https://reviews.ubuntu.com/reviews/api/1.0/reviews/filter/uk/any/any/any/skype/page/1/helpful/
+strict-transport-security: max-age=15768000; includeSubDomains; preload
+vary: Accept
+server: gunicorn/19.3.0
+last-modified: Sun, 21 Feb 2016 15:49:37 GMT
+x-bzr-revision-number: 313
+cache-control: max-age=300
+date: Sun, 21 Feb 2016 15:49:37 GMT
+content-type: application/json; charset=utf-8
+
+[
+    {
+        "origin": "canonical", 
+        "rating": 4, 
+        "hide": false, 
+        "app_name": "Skype", 
+        "language": "uk", 
+        "reviewer_username": "8JMXdwx", 
+        "usefulness_total": 14, 
+        "usefulness_favorable": 12, 
+        "review_text": "Все працює добре, але як вже згадувалось раніше, дизайн на сьогодні є знадто застарілим і давно вже віджив своє. Давно пора випустити новішу версію.", 
+        "date_deleted": null, 
+        "summary": "Добре", 
+        "version": "4.1.0.20.0-0ubuntu0.12.04.2", 
+        "id": 69746, 
+        "date_created": "2013-04-04 17:35:04", 
+        "reviewer_displayname": "nick", 
+        "package_name": "skype", 
+        "distroseries": "quantal"
+    }, 
+    {
+        "origin": "canonical", 
+        "rating": 5, 
+        "hide": false, 
+        "app_name": "Skype", 
+        "language": "uk", 
+        "reviewer_username": "xcbXTx6", 
+        "usefulness_total": 19, 
+        "usefulness_favorable": 2, 
+        "review_text": "Класний клієнт! Але вінда працює краще :)", 
+        "date_deleted": null, 
+        "summary": "1", 
+        "version": "2.2.0.35-0oneiric2", 
+        "id": 46599, 
+        "date_created": "2012-05-12 18:57:35", 
+        "reviewer_displayname": "Maxym", 
+        "package_name": "skype", 
+        "distroseries": "oneiric"
+    }, 
+    {
+        "origin": "canonical", 
+        "rating": 5, 
+        "hide": false, 
+        "app_name": "Skype", 
+        "language": "uk", 
+        "reviewer_username": "mAnbkJc", 
+        "usefulness_total": 24, 
+        "usefulness_favorable": 18, 
+        "review_text": "Чудовий клієнт для комунікацій. Сподіваюсь він таким і залишиться навіть після того, як його придбав Microsoft.", 
+        "date_deleted": null, 
+        "summary": "Відмінно.", 
+        "version": "2.2.0.35-0natty1", 
+        "id": 20166, 
+        "date_created": "2011-08-31 19:24:28", 
+        "reviewer_displayname": "Євген", 
+        "package_name": "skype", 
+        "distroseries": "natty"
+    }
+]

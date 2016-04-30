@@ -1,0 +1,19 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com https://supermegabest.com https://api.supermegabest.com https://tune.yandex.ru/region/; object-src 'self'",
+   "description": "Простой способ найти лучшие цены",
+   "icons": {
+      "128": "image/128.png",
+      "16": "image/16.png",
+      "32": "image/32.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDb4teEWNVdjXdH/rrKltCMG196zHyzWQoHMw4isv29WAESnwPz2A83Do26XJX2xFOt1AI9DraHBUSrP98HNlz+2p0MNtN4y9MzlH7foUld+SZj9802f3hk/W34BhmYsiPsw/NRyfjz2ZGM9nYd/zcuVtk5AnnQBVK1GrLs8sHFdQIDAQAB",
+   "manifest_version": 2,
+   "name": "Помощник",
+   "permissions": [ "http://*/", "https://*/", "storage", "tabs", "webNavigation", "webRequest", "webRequestBlocking" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.0.1"
+}

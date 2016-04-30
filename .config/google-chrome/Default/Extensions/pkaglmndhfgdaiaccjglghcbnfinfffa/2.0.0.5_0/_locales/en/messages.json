@@ -1,0 +1,414 @@
+{
+   "about": {
+      "description": "About",
+      "message": "About"
+   },
+   "advancedoptions": {
+      "description": "Advanced Options",
+      "message": "Advanced Options"
+   },
+   "areyouhappy": {
+      "description": "Are you happy about Ambient Aurea?",
+      "message": "Are you happy about Ambient Aurea?"
+   },
+   "basicsettings": {
+      "description": "Basics",
+      "message": "Basics"
+   },
+   "bottom": {
+      "description": "Bottom:",
+      "message": "Bottom:"
+   },
+   "browserbutton": {
+      "description": "Ambient Aurea",
+      "message": "Ambient Aurea"
+   },
+   "changelog": {
+      "description": "Changelog",
+      "message": "Changelog"
+   },
+   "desambientaurea": {
+      "description": "Where your photos come to life is also available for your computer.",
+      "message": "Where your photos come to life is also available for your computer."
+   },
+   "desambilight": {
+      "description": "Show you the atmosphere lighting effect of the current image",
+      "message": "Show you the atmosphere lighting effect of the current image"
+   },
+   "desambilight4color": {
+      "description": "4 choosen colors around the image:",
+      "message": "4 choosen colors around the image:"
+   },
+   "desambilightfixcolor": {
+      "description": "A solid color:",
+      "message": "A solid color:"
+   },
+   "desambilightrangeblurradius": {
+      "description": "Lower values will sharpen the shadow, higher values will make them more blurred.",
+      "message": "Lower values will sharpen the shadow, higher values will make them more blurred."
+   },
+   "desambilightrangespreadradius": {
+      "description": "Positive values increase the size of the shadow, negative values decrease the size.",
+      "message": "Positive values increase the size of the shadow, negative values decrease the size."
+   },
+   "desambilightvarcolor": {
+      "description": "Take the colors from the image content.",
+      "message": "Take the colors from the image content."
+   },
+   "desatmosvivid": {
+      "description": "Vivid atmosphere effects",
+      "message": "Vivid atmosphere effects"
+   },
+   "desbrowserextension": {
+      "description": "browser extension",
+      "message": "browser extension"
+   },
+   "descolor": {
+      "description": "The background color of the outside of the frame",
+      "message": "The background color of the outside of the frame"
+   },
+   "descontextmenus": {
+      "description": "Show the context menu for Ambient Aurea",
+      "message": "Show the context menu for Ambient Aurea"
+   },
+   "descount": {
+      "description": "This show right below the total number of images found in the gallery.",
+      "message": "This show right below the total number of images found in the gallery."
+   },
+   "description": {
+      "description": "Bring your image to an ambient lighting effect with just one click on the button.",
+      "message": "Bring your image to an ambient lighting effect with just one click on the button."
+   },
+   "desfadein": {
+      "description": "Show the fade in effect",
+      "message": "Show the fade in effect"
+   },
+   "desfadeout": {
+      "description": "Show the fade out effect",
+      "message": "Show the fade out effect"
+   },
+   "desicon": {
+      "description": "Hide the pageaction icon in the omnibar",
+      "message": "Hide the pageaction icon in the omnibar"
+   },
+   "desopacity": {
+      "description": "Choose the opacity level outside of the frame.",
+      "message": "Choose the opacity level outside of the frame."
+   },
+   "desproject": {
+      "description": "project",
+      "message": "project"
+   },
+   "desrememberpage": {
+      "description": "If this option is enabled, it will not show you the remember page.",
+      "message": "If this option is enabled, it will not show you the remember page."
+   },
+   "dessharebar": {
+      "description": "This shows the share bar for the current image.",
+      "message": "This shows the share bar for the current image."
+   },
+   "desslideshow": {
+      "description": "This add on the top of your website an extra play button. So you can start the slideshow in that gallery.",
+      "message": "This add on the top of your website an extra play button. So you can start the slideshow in that gallery."
+   },
+   "desslideshowrefresh": {
+      "description": "to show the next image.",
+      "message": "to show the next image."
+   },
+   "donatepromotext": {
+      "description": "If you can make a donation of any amount, I'd appreciate it immensely!",
+      "message": "If you can make a donation of any amount, I'd appreciate it immensely!"
+   },
+   "downloadtheapp": {
+      "description": "Download the app now",
+      "message": "Download the app now"
+   },
+   "enjoyshare": {
+      "description": "Enjoy this extension and share it with others who you think will appreciate it.",
+      "message": "Enjoy this extension and share it with others who you think will appreciate it."
+   },
+   "friendlyremember": {
+      "description": "Friendly Reminder...",
+      "message": "Friendly Reminder..."
+   },
+   "guide": {
+      "description": "AA Welcome Guide",
+      "message": "AA Welcome Guide"
+   },
+   "help": {
+      "description": "Help",
+      "message": "Help"
+   },
+   "helptranslate": {
+      "description": "Help Translate",
+      "message": "Help Translate"
+   },
+   "imagesembedobject": {
+      "description": "Supports: \u003Cimg>.",
+      "message": "Supports: \u003Cimg>."
+   },
+   "imagetitle": {
+      "description": "Image go to Ambient Aurea",
+      "message": "Image go to Ambient Aurea"
+   },
+   "left": {
+      "description": "Left:",
+      "message": "Left:"
+   },
+   "longdonatetext": {
+      "description": "I'd truly appreciate if you can donate me to keep this browser extension alive for other new users. Whether it's $$1 or $$100, your support is immensely appreciated!",
+      "message": "I'd truly appreciate if you can donate me to keep this browser extension alive for other new users. Whether it's $$1 or $$100, your support is immensely appreciated!"
+   },
+   "name": {
+      "description": "Ambient Aurea",
+      "message": "Ambient Aurea"
+   },
+   "nothanks": {
+      "description": "No thanks",
+      "message": "No thanks"
+   },
+   "optionpagetitle": {
+      "description": "Ambient Aurea - Options",
+      "message": "Ambient Aurea - Options"
+   },
+   "pagehelp": {
+      "description": "help",
+      "message": "help"
+   },
+   "pagestillloading": {
+      "description": "The page is still loading?",
+      "message": "The page is still loading?"
+   },
+   "productshare": {
+      "description": "Share",
+      "message": "Share"
+   },
+   "ratedes": {
+      "description": "And let everyone know about this great extension!",
+      "message": "And let everyone know about this great extension!"
+   },
+   "rateitema": {
+      "description": "Rate 5 stars",
+      "message": "Rate 5 stars"
+   },
+   "ratetitle": {
+      "description": "Please rate & review my extension",
+      "message": "Please rate & review my extension"
+   },
+   "rememberrate": {
+      "description": "Rate",
+      "message": "Rate"
+   },
+   "reportbug": {
+      "description": "Report an Issue",
+      "message": "Report an Issue"
+   },
+   "reportlist": {
+      "description": "See the full issue list",
+      "message": "Last known issue"
+   },
+   "resetbrowserextension": {
+      "description": "Reset the Ambient Aurea settings",
+      "message": "Reset the Ambient Aurea settings"
+   },
+   "right": {
+      "description": "Right:",
+      "message": "Right:"
+   },
+   "seelist": {
+      "description": "(see list)",
+      "message": "(see list)"
+   },
+   "settings": {
+      "description": "Settings",
+      "message": "Settings"
+   },
+   "sharemenudonatetitle": {
+      "description": "Support Development",
+      "message": "Support Development"
+   },
+   "sharemenupostonfacebook": {
+      "description": "Post on Facebook",
+      "message": "Post on Facebook"
+   },
+   "sharemenupostongoogleplus": {
+      "description": "Post on Google+",
+      "message": "Post on Google+"
+   },
+   "sharemenuratetitle": {
+      "description": "Rate this extension",
+      "message": "Rate this extension"
+   },
+   "sharemenusendatweet": {
+      "description": "Send a Tweet",
+      "message": "Send a Tweet"
+   },
+   "sharemenusharetitle": {
+      "description": "Share this",
+      "message": "Share this"
+   },
+   "sharemenutellafriend": {
+      "description": "Tell a Friend",
+      "message": "Tell a Friend"
+   },
+   "sharemenuwelcomeguidetitle": {
+      "description": "Welcome Guide",
+      "message": "Welcome Guide"
+   },
+   "showremember": {
+      "description": "Do not show this reminder page again when I open the options",
+      "message": "Do not show this reminder page again when I open the options"
+   },
+   "skipremember": {
+      "description": "Skip this, and open now the options page",
+      "message": "Skip this, and open now the options page"
+   },
+   "tellothers": {
+      "description": "Ensure that your opinion counts",
+      "message": "Ensure that your opinion counts"
+   },
+   "textfoot": {
+      "description": "This software is licensed under the CC-GNU GPL. To view a copy of this license, visit",
+      "message": "This software is licensed under the CC-GNU GPL. To view a copy of this license, visit"
+   },
+   "titelambilight": {
+      "description": "Atmosphere Lighting",
+      "message": "Atmosphere Lighting"
+   },
+   "titelblurradius": {
+      "description": "Blur radius:",
+      "message": "Blur radius:"
+   },
+   "titelcolor": {
+      "description": "Color",
+      "message": "Color"
+   },
+   "titelcontextmenus": {
+      "description": "Context Menu",
+      "message": "Context Menu"
+   },
+   "titelcount": {
+      "description": "All found images",
+      "message": "All found images"
+   },
+   "titeldeveloper": {
+      "description": "Developer",
+      "message": "Developer"
+   },
+   "titeldownloadbutton": {
+      "description": "Download this Upgrade!",
+      "message": "Download this Upgrade!"
+   },
+   "titeldownloadupgrade": {
+      "description": "The entire page will be fading to dark, so you can watch the video as if you were in the cinema.",
+      "message": "The entire page will be fading to dark, so you can watch the video as if you were in the cinema."
+   },
+   "titeldownloadupgradefinancetoolbar": {
+      "description": "This shows you the real time stock market information.",
+      "message": "This shows you the real time stock market information."
+   },
+   "titeldownloadupgradepropermenubar": {
+      "description": "Add back the black menubar on the Google website.",
+      "message": "Add back the black menubar on the Google website."
+   },
+   "titeldownloadupgradezoom": {
+      "description": "Zoom in or out on web content using the zoom button for more comfortable reading.",
+      "message": "Zoom in or out on web content using the zoom button for more comfortable reading."
+   },
+   "titelfadein": {
+      "description": "Fade In",
+      "message": "Fade In"
+   },
+   "titelfadeout": {
+      "description": "Fade Out",
+      "message": "Fade Out"
+   },
+   "titelicon": {
+      "description": "Pageaction Icon",
+      "message": "Pageaction Icon"
+   },
+   "titeloff": {
+      "description": "Off",
+      "message": "Off"
+   },
+   "titelon": {
+      "description": "On",
+      "message": "On"
+   },
+   "titelopacity": {
+      "description": "Opacity",
+      "message": "Opacity"
+   },
+   "titelrememberpage": {
+      "description": "Reminder page",
+      "message": "Reminder page"
+   },
+   "titelreset": {
+      "description": "Reset settings",
+      "message": "Reset settings"
+   },
+   "titelrightsreserved": {
+      "description": "Some rights reserved.",
+      "message": "Some rights reserved."
+   },
+   "titelsharebar": {
+      "description": "Share Bar",
+      "message": "Share Bar"
+   },
+   "titelslideshow": {
+      "description": "Slideshow",
+      "message": "Slideshow"
+   },
+   "titelspreadradius": {
+      "description": "Spread radius:",
+      "message": "Spread radius:"
+   },
+   "titelsync": {
+      "description": "Sync",
+      "message": "Sync"
+   },
+   "titelsyncbrowser": {
+      "description": "Sync the extension settings with your other browser.",
+      "message": "Sync the extension settings with your other browser."
+   },
+   "titelupgrade": {
+      "description": "Upgrade",
+      "message": "Upgrade"
+   },
+   "titelwebsite": {
+      "description": "Website",
+      "message": "Website"
+   },
+   "titledonatebutton": {
+      "description": "Donate",
+      "message": "Donate"
+   },
+   "top": {
+      "description": "Top:",
+      "message": "Top:"
+   },
+   "translateme": {
+      "description": "Help Translate",
+      "message": "Help Translate"
+   },
+   "upgradefbshare": {
+      "description": "Share on Facebook",
+      "message": "Share on Facebook"
+   },
+   "upgradetwshare": {
+      "description": "Tweet",
+      "message": "Tweet"
+   },
+   "version": {
+      "description": "Version",
+      "message": "Version"
+   },
+   "visualeffects": {
+      "description": "Visual Effects",
+      "message": "Visual Effects"
+   },
+   "writeareview": {
+      "description": "Write a review",
+      "message": "Write a review"
+   }
+}
